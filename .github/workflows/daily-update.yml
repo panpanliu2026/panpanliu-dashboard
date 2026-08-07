@@ -1,0 +1,33 @@
+name: Daily Dashboard Update
+
+on:
+  schedule:
+    # UTC 0:00 = Beijing 8:00, run every day
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write # Allow pushing to the repo
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run daily update script
+        run: python daily_update.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --staged --quiet || git commit -m "Auto-update dashboard $(date -u -d '+8 hours' '+%Y-%m-%d')"
+          git push
