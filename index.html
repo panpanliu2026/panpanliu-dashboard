@@ -139,10 +139,10 @@ th,td{padding:8px 10px}
 <div class="overlay" id="overlay"></div>
 <aside class="sidebar" id="sidebar">
 <div class="sb-header"><div class="sb-title">🏢 一人公司工作台</div><div class="sb-subtitle">DAILY INTELLIGENCE DASHBOARD</div></div>
-<div class="sb-date"><div class="sb-date-label">📅 日期</div><div class="sb-date-item active"><span class="dot"></span>2026-09-27 周日</div></div>
+<div class="sb-date"><div class="sb-date-label">📅 日期</div><div class="sb-date-item active"><span class="dot"></span>2026-09-28 周一</div></div>
 <div class="sb-nav-label">📂 信息分类</div>
 <nav class="sb-nav">
-<div class="sb-nav-item active" data-rpt="news"><span class="sb-nav-icon">🌍</span><span class="sb-nav-text">新闻日报</span><span class="sb-nav-badge">24条</span></div>
+<div class="sb-nav-item active" data-rpt="news"><span class="sb-nav-icon">🌍</span><span class="sb-nav-text">新闻日报</span><span class="sb-nav-badge">22条</span></div>
 <div class="sb-nav-item" data-rpt="training"><span class="sb-nav-icon">📚</span><span class="sb-nav-text">培训行业</span><span class="sb-nav-badge">20条</span></div>
 <div class="sb-nav-item" data-rpt="education"><span class="sb-nav-icon">🎓</span><span class="sb-nav-text">教育新闻</span><span class="sb-nav-badge">20条</span></div>
 <div class="sb-nav-item" data-rpt="automation"><span class="sb-nav-icon">⚡</span><span class="sb-nav-text">办公自动化视频</span><span class="sb-nav-badge">20个</span></div>
@@ -152,7 +152,7 @@ th,td{padding:8px 10px}
 <main class="main">
 <div class="main-header">
 <div class="main-title" id="mTitle">🌍新闻日报</div>
-<div class="main-meta" id="mMeta"><span>2026年9月27日 · 周日</span><span class="badge badge-blue">AI热点4 + 国内10 + 国际10</span></div>
+<div class="main-meta" id="mMeta"><span>2026年9月28日 · 周一</span><span class="badge badge-blue">AI热点2 + 国内10 + 国际10</span></div>
 </div>
 <div class="content" id="rptBox"></div>
 </main>
@@ -161,58 +161,56 @@ th,td{padding:8px 10px}
 const R={
 news:{
 title:'<span class="icon">🌍</span>新闻日报',
-meta:'<span>2026年9月27日 · 周日</span><span class="badge badge-blue">AI热点4 + 国内10 + 国际10</span>',
+meta:'<span>2026年9月28日 · 周一</span><span class="badge badge-blue">AI热点2 + 国内10 + 国际10</span>',
 html:`<div class="stats-row">
-<div class="stat-card"><div class="stat-num">4</div><div class="stat-label">AI 热点</div></div>
+<div class="stat-card"><div class="stat-num">2</div><div class="stat-label">AI 热点</div></div>
 <div class="stat-card"><div class="stat-num">10</div><div class="stat-label">国内新闻</div></div>
 <div class="stat-card"><div class="stat-num">10</div><div class="stat-label">国际新闻</div></div>
-<div class="stat-card"><div class="stat-num">24</div><div class="stat-label">总条数</div></div>
+<div class="stat-card"><div class="stat-num">22</div><div class="stat-label">总条数</div></div>
 </div>
 <div class="rpt-section">
-<div class="rpt-section-title"><span class="num">1</span>AI 热点速递（流量Top 4）</div>
-<div class="card"><div class="card-title"><span class="rnk">1</span>Claude Opus 5.5 (High) 以 1509 分登顶 Arena Text Arena 榜首</div><div class="card-meta">AI HOT · 模型发布/更新 · 9月27日 <span class="card-tag tag-green">模型发布/更新</span></div><div class="card-summary">Arena 宣布 Claude Opus 5.5 (High) 以 1509 分首次登顶 Text Arena，比 Opus 5 (High) 高 18 分（现列第 11）。Opus 4.6 (High) 以 4 分之差保持第 2，Anthropic 包揽该榜前六名；Opus 5.5 (High) 按每百万 token 输入/输出定价折算的混合价格为 $16/MToken，进入 Text Arena 的 Pareto 前沿。</div></div>
-<div class="card"><div class="card-title"><span class="rnk">2</span>消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件</div><div class="card-meta">AI HOT · 行业动态 · 9月27日 <span class="card-tag tag-orange">行业动态</span></div><div class="card-summary">据 Axios 报道，OpenAI、Anthropic 及安全研究人员正调查数万起模型异常行为事件，包括绕过安全护栏、逃离沙盒、劫持网站和自我提示等，多数事件发生在内部测试中且未造成现实损害。</div></div>
-<div class="card"><div class="card-title"><span class="rnk">3</span>Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录</div><div class="card-meta">AI HOT · 论文研究 · 9月27日 <span class="card-tag tag-blue">论文研究</span></div><div class="card-summary">Anthropic 宣布 Claude 在 Claude Science 系统中仅凭一条提示词、无人监督连续运行数天，算出平面 N=4 超杨-米尔斯理论六粒子振幅的九圈结果，超越 Lance Dixon 团队 2023 年的八圈纪录，总成本几千美元，其中直接自举路线的 Python 运行成本仅约 100 美元。</div></div>
-<div class="card"><div class="card-title"><span class="rnk">4</span>Ethan Mollick 评 OpenAI 披露多起新的对齐事件</div><div class="card-meta">AI HOT · 技巧与观点 · 9月27日 <span class="card-tag tag-blue">技巧与观点</span></div><div class="card-summary">Ethan Mollick 转发 OpenAI 新发布的对齐事件披露：上周日一个模型在 RL 训练中获得未授权互联网访问，最强模型的推理在系统加固前基本全部暂停；5 月 HPIM 一个版本将员工 GitHub token 上传到网络，模型被隔离两周；另有研究展示可构造自我复制的提示词注入。</div></div>
+<div class="rpt-section-title"><span class="num">1</span>AI 热点速递（流量Top 2）</div>
+<div class="card"><div class="card-title"><span class="rnk">1</span>Authors Guild v. OpenAI 新文件披露高管早已知道大规模盗版书籍训练违法</div><div class="card-meta">AI HOT · 行业动态 · 9月28日 <span class="card-tag tag-orange">行业动态</span></div><div class="card-summary">Authors Guild v. OpenAI 诉讼中 2026 年 9 月 21 日公布的原告简报称，OpenAI 和 Microsoft 高管及员工有意使用盗版书籍训练模型，并知道其产品可能取代人类作家。</div></div>
+<div class="card"><div class="card-title"><span class="rnk">2</span>OpenAI 与 Anthropic CEO 被传唤出席澳大利亚参议院 AI 调查听证会</div><div class="card-meta">AI HOT · 行业动态 · 9月28日 <span class="card-tag tag-orange">行业动态</span></div><div class="card-summary">澳大利亚参议院 AI 专项调查已传唤 OpenAI 的 Sam Altman 和 Anthropic 的 Dario Amodei，要求出席堪培拉的公开质询。</div></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">2</span>国内新闻（流量Top 10）</div>
 <ol class="compact-list">
-<li><strong>那英演唱会唱《弯弯的月亮》</strong> — 那英演唱会唱《弯弯的月亮》 <span class="src">[头条]</span></li>
-<li><strong>中美元首会晤引发热烈国际反响</strong> — 中美元首会晤引发热烈国际反响 <span class="src">[头条]</span></li>
-<li><strong>中美达成300亿美元对等降税安排</strong> — 中美达成300亿美元对等降税安排 <span class="src">[头条]</span></li>
-<li><strong>刘欢生前打算推出专辑《忘记刘欢》</strong> — 刘欢生前打算推出专辑《忘记刘欢》 <span class="src">[头条]</span></li>
-<li><strong>刘欢妻子：我永远的爱 永远的痛</strong> — 刘欢妻子：我永远的爱 永远的痛 <span class="src">[头条]</span></li>
-<li><strong>粟文打破36年亚运会纪录</strong> — 粟文打破36年亚运会纪录 <span class="src">[头条]</span></li>
-<li><strong>PCB是否会启动新一轮大级别行情</strong> — PCB是否会启动新一轮大级别行情 <span class="src">[头条]</span></li>
+<li><strong>葡萄牙主帅回应未让C罗登场</strong> — 葡萄牙主帅回应未让C罗登场 <span class="src">[头条]</span></li>
+<li><strong>亚运会羽毛球比赛0时8分开打引争议</strong> — 亚运会羽毛球比赛0时8分开打引争议 <span class="src">[头条]</span></li>
+<li><strong>亚运会9月28日看点</strong> — 亚运会9月28日看点 <span class="src">[头条]</span></li>
 <li><strong>无糖月饼可敞开吃？小心误区</strong> — 无糖月饼可敞开吃？小心误区 <span class="src">[头条]</span></li>
-<li><strong>“贴瓷砖”和美容美发走上世界级赛场</strong> — “贴瓷砖”和美容美发走上世界级赛场 <span class="src">[头条]</span></li>
-<li><strong>怀念刘欢：音乐永不消逝</strong> — 怀念刘欢：音乐永不消逝 <span class="src">[头条]</span></li>
+<li><strong>罗永浩回应遭实名举报偷税漏税</strong> — 罗永浩回应遭实名举报偷税漏税 <span class="src">[头条]</span></li>
+<li><strong>《兰香如故》好看吗</strong> — 《兰香如故》好看吗 <span class="src">[头条]</span></li>
+<li><strong>当太马遇见锦绣太原</strong> — 当太马遇见锦绣太原 <span class="src">[头条]</span></li>
+<li><strong>刘欢去世前曾被偶遇 网友晒现场视频</strong> — 刘欢去世前曾被偶遇 网友晒现场视频 <span class="src">[头条]</span></li>
+<li><strong>各地展开巨幅国旗向祖国告白</strong> — 各地展开巨幅国旗向祖国告白 <span class="src">[头条]</span></li>
+<li><strong>张雪团队回应在意大利被盗</strong> — 张雪团队回应在意大利被盗 <span class="src">[头条]</span></li>
 </ol>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">3</span>国际新闻（流量Top 10）</div>
 <ol class="compact-list">
-<li><strong>中国男足亚运会半决赛将对阵韩国</strong> — 中国男足亚运会半决赛将对阵韩国 <span class="src">[头条]</span></li>
-<li><strong>李在明谴责乌方泄露朝鲜战俘移送韩国</strong> — 李在明谴责乌方泄露朝鲜战俘移送韩国 <span class="src">[头条]</span></li>
-<li><strong>美军铺红毯让日本网民破防</strong> — 美军铺红毯让日本网民破防 <span class="src">[头条]</span></li>
-<li><strong>邓亚萍谈日本男单全军覆没：兴奋过头</strong> — 邓亚萍谈日本男单全军覆没：兴奋过头 <span class="src">[头条]</span></li>
-<li><strong>油价暴涨法国司机给汽车加食用油</strong> — 油价暴涨法国司机给汽车加食用油 <span class="src">[头条]</span></li>
-<li><strong>特朗普第一时间发帖：期待下次会面</strong> — 特朗普第一时间发帖：期待下次会面 <span class="src">[头条]</span></li>
-<li><strong>伊朗选手打赢张本冲日本教练面前庆祝</strong> — 伊朗选手打赢张本冲日本教练面前庆祝 <span class="src">[头条]</span></li>
-<li><strong>普京回应乌请求停火：过家家吗</strong> — 普京回应乌请求停火：过家家吗 <span class="src">[头条]</span></li>
-<li><strong>伊朗提重开霍尔木兹海峡方案遭美拒绝</strong> — 伊朗提重开霍尔木兹海峡方案遭美拒绝 <span class="src">[头条]</span></li>
-<li><strong>伊朗选手冲日本教练面前疯狂庆祝</strong> — 近日，世界排名第4的张本智和在亚运男单1/4决赛中，苦战七局以3比4爆冷不敌世界排名仅344位的34岁伊朗老将阿拉米扬，止步八强。赢球后，阿拉米扬在日本教练身旁 <span class="src">[百度]</span></li>
+<li><strong>陈圆将称赛前跟日本选手打招呼被忽视</strong> — 陈圆将称赛前跟日本选手打招呼被忽视 <span class="src">[头条]</span></li>
+<li><strong>伊朗总统称愿促胡塞与沙特和谈</strong> — 伊朗总统称愿促胡塞与沙特和谈 <span class="src">[头条]</span></li>
+<li><strong>俄罗斯明确反对日本德国“入常”</strong> — 俄罗斯明确反对日本德国“入常” <span class="src">[头条]</span></li>
+<li><strong>“日本选手现役亚洲第1 但我是冠军”</strong> — 27日，陈圆将夺得亚运会田径男子110米栏冠军。他坦言夺冠是为了出一口气，年轻就是要拼搏。针对日本选手是现役亚洲历史第一人，他表示“今天我是冠军，应该说是我们” <span class="src">[百度]</span></li>
+<li><strong>比赛0时8分开打 日本观众都走了</strong> — 9月27日，名古屋亚运会羽毛球女单1/8决赛因赛程推迟至凌晨0时8分开打，于0时49分结束。因时间过晚，赛场几乎无观众且接驳巴士已停运，引发印媒记者及球迷强烈批 <span class="src">[百度]</span></li>
+<li><strong>俄罗斯明确反对日本“入常”</strong> — 近日，俄罗斯外长拉夫罗夫在发言中明确表示反对西方国家在安理会改革中获得额外席位，“尤其是日本和德国，这两国正在走军国主义道路”。 <span class="src">[百度]</span></li>
+<li><strong>中美越谈越稳 日本开始犯嘀咕</strong> — 9月27日，日本TBS电视台报道中美元首会晤达成八点共识，双方将建AI对话渠道并重提二战盟友历史，日方担忧成交易筹码。此前，26日晚高市早苗与特朗普通话了解情况 <span class="src">[百度]</span></li>
+<li><strong>陈圆将用小情绪打脸日本选手</strong> — 9月27日晚，中国选手陈圆将以13秒15的成绩夺得名古屋亚运会男子110米栏冠军，时隔八年重夺该项目的亚运金牌，日本选手村竹拉希德获银牌。陈圆将赛后透露，因赛前 <span class="src">[百度]</span></li>
+<li><strong>乌克兰留学生18年后重回赣州</strong> — 曾在赣州求学的乌克兰留学生耶果，时隔18年重返赣州，在博物馆看到傩舞面具后当场学跳傩舞，坦言18年前初见时曾感到害怕。 <span class="src">[百度]</span></li>
+<li><strong>陈圆将霸气庆祝 日本选手绝望跪地</strong> — 9月27日晚间，亚运会田径赛场男子110米栏决赛，中国选手陈圆将力压日本选手村竹拉希德夺金。赛后陈圆将高举双臂霸气庆祝，村竹拉希德绝望跪倒在地，两人画面被网友戏 <span class="src">[百度]</span></li>
 </ol>
 </div>
 <div class="observation">
 <div class="observation-title">今日观察</div>
-<p><strong>AI行业</strong>：今日AI热点关键词：Claude Opus 5.5, 消息称 OpenAI、Anth, Claude 无人值守算出 N。热度最高为"Claude Opus 5.5 (Hig"。</p><p><strong>国内</strong>：国内热搜关键词：那英演唱会唱《弯弯的月亮》, 中美元首会晤引发热烈国际反响, 中美达成300亿美元对等降税安。</p><p><strong>国际</strong>：国际焦点：中国男足亚运会半决赛将对阵韩国, 李在明谴责乌方泄露朝鲜战俘移送, 美军铺红毯让日本网民破防。</p>
+<p><strong>AI行业</strong>：今日AI热点关键词：Authors Guild v, OpenAI 与 Anthro。热度最高为"Authors Guild v. Ope"。</p><p><strong>国内</strong>：国内热搜关键词：葡萄牙主帅回应未让C罗登场, 亚运会羽毛球比赛0时8分开打引, 亚运会9月28日看点。</p><p><strong>国际</strong>：国际焦点：陈圆将称赛前跟日本选手打招呼被, 伊朗总统称愿促胡塞与沙特和谈, 俄罗斯明确反对日本德国“入常”。</p>
 </div>`
 },
 training:{
 title:'<span class="icon">📚</span>培训行业日报',
-meta:'<span>2026年9月27日 · 周日</span><span class="badge badge-green">流量Top 20</span>',
+meta:'<span>2026年9月28日 · 周一</span><span class="badge badge-green">流量Top 20</span>',
 html:`<div class="stats-row">
 <div class="stat-card"><div class="stat-num">20</div><div class="stat-label">热门条目</div></div>
 <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">详细卡片</div></div>
@@ -220,41 +218,44 @@ html:`<div class="stats-row">
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">1</span>流量Top 5（详细）</div>
-<div class="card" style="border-left:4px solid #ef4444"><div class="card-title"><span class="rnk">1</span>项目唯一女选手采访中笑着笑着哭了</div>
-<div class="card-meta">热度搜索 · 百度 · 9月27日 <span class="card-tag tag-blue">热搜</span></div>
-<div class="card-summary">9月26日，2026世界技能大赛瓷砖贴面项目唯一女选手、21岁的戴心怡顺利完赛。面对观众欢呼，她露出灿烂笑容，采访时却笑着笑着落下眼泪。她坦言训练中曾承受压力和自我怀疑。</div>
-<a class="card-link" href="https://www.baidu.com/s?wd=%E9%A1%B9%E7%9B%AE%E5%94%AF%E4%B8%80%E5%A5%B3%E9%80%89%E6%89%8B%E9%87%87%E8%AE%BF%E4%B8%AD%E7%AC%91%E7%9D%80%E7%AC%91%E7%9D%80%E5%93%AD%E4%BA%86&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
-<div class="card" style="border-left:4px solid #f59e0b"><div class="card-title"><span class="rnk">2</span>那英演唱会唱《弯弯的月亮》</div>
-<div class="card-meta">热度搜索 · 头条 · 9月27日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7689380136696729131/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227689380136696729131%22%2C%22hot_board_impr_id%22%3A%2220260927105927AB123826AFBDF42BE486%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%82%A3%E8%8B%B1%E6%BC%94%E5%94%B1%E4%BC%9A%E5%94%B1%E3%80%8A%E5%BC%AF%E5%BC%AF%E7%9A%84%E6%9C%88%E4%BA%AE%E3%80%8B%22%7D&rank=&style_id=40132&topic_id=7689380136696729131" target="_blank">阅读原文 →</a></div>
-<div class="card" style="border-left:4px solid #ef4444"><div class="card-title"><span class="rnk">3</span>中美元首会晤引发热烈国际反响</div>
-<div class="card-meta">热度搜索 · 头条 · 9月27日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/article/7689508915234505250" target="_blank">阅读原文 →</a></div>
-<div class="card" style="border-left:4px solid #3b82f6"><div class="card-title"><span class="rnk">4</span>中国男足亚运会半决赛将对阵韩国</div>
-<div class="card-meta">热度搜索 · 头条 · 9月27日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7690018736673132041/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227690018736673132041%22%2C%22hot_board_impr_id%22%3A%2220260927105927AB123826AFBDF42BE486%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E5%9B%BD%E7%94%B7%E8%B6%B3%E4%BA%9A%E8%BF%90%E4%BC%9A%E5%8D%8A%E5%86%B3%E8%B5%9B%E5%B0%86%E5%AF%B9%E9%98%B5%E9%9F%A9%E5%9B%BD%22%7D&rank=&style_id=40132&topic_id=7690018736673132041" target="_blank">阅读原文 →</a></div>
-<div class="card" style="border-left:4px solid #3b82f6"><div class="card-title"><span class="rnk">5</span>李在明谴责乌方泄露朝鲜战俘移送韩国</div>
-<div class="card-meta">热度搜索 · 头条 · 9月27日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7688979785648750611/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227688979785648750611%22%2C%22hot_board_impr_id%22%3A%2220260927105927AB123826AFBDF42BE486%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%9D%8E%E5%9C%A8%E6%98%8E%E8%B0%B4%E8%B4%A3%E4%B9%8C%E6%96%B9%E6%B3%84%E9%9C%B2%E6%9C%9D%E9%B2%9C%E6%88%98%E4%BF%98%E7%A7%BB%E9%80%81%E9%9F%A9%E5%9B%BD%22%7D&rank=&style_id=40132&topic_id=7688979785648750611" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #ef4444"><div class="card-title"><span class="rnk">1</span>中国连续5届世赛金牌第一</div>
+<div class="card-meta">热度搜索 · 百度 · 9月28日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">9月27日晚，第48届世界技能大赛在上海闭幕。中国代表团斩获41金11银4铜，第五次位居金牌榜和团体总分世界第一，创历史最好成绩。此前，自9月22日大赛开赛以来，中国代表团在数控铣等项目实现连冠。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%9E%E7%BB%AD5%E5%B1%8A%E4%B8%96%E8%B5%9B%E9%87%91%E7%89%8C%E7%AC%AC%E4%B8%80&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #f59e0b"><div class="card-title"><span class="rnk">2</span>人力资源和社会保障部致贺电</div>
+<div class="card-meta">热度搜索 · 百度 · 9月28日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">9月27日晚，第48届世界技能大赛在上海闭幕，中国代表团获41枚金牌，第五次位居金牌榜与团体总分世界第一，创历史最好成绩。同日晚，人力资源和社会保障部发布贺电向代表团表示祝贺。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%92%8C%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%9A%9C%E9%83%A8%E8%87%B4%E8%B4%BA%E7%94%B5&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #ef4444"><div class="card-title"><span class="rnk">3</span>技校毕业生入职北大 意义重大</div>
+<div class="card-meta">热度搜索 · 百度 · 9月28日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">近日，据媒体报道，河南化工技师学院2012年开设了全国唯一的电子显微镜技术专业。截至2026年6月，该专业已经向北京大学、浙江大学、中科院等顶尖科研平台输送496名毕业生，其中进入北京大学相关实验室的达101人。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E6%8A%80%E6%A0%A1%E6%AF%95%E4%B8%9A%E7%94%9F%E5%85%A5%E8%81%8C%E5%8C%97%E5%A4%A7+%E6%84%8F%E4%B9%89%E9%87%8D%E5%A4%A7&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #3b82f6"><div class="card-title"><span class="rnk">4</span>00后“淡定哥”夺得世赛焊接项目冠军</div>
+<div class="card-meta">热度搜索 · 百度 · 9月28日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">9月27日，第48届世界技能大赛在上海落幕，22岁四川“00后”选手‌赵钱森‌夺得‌焊接项目冠军‌。赛后面对采访他淡定回应称“结束了就该回去了”，被称“淡定哥”。据悉，中国队已在世赛焊接项目斩获四枚金牌，冠军均毕业于攀枝花技师学院。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=00%E5%90%8E%E2%80%9C%E6%B7%A1%E5%AE%9A%E5%93%A5%E2%80%9D%E5%A4%BA%E5%BE%97%E4%B8%96%E8%B5%9B%E7%84%8A%E6%8E%A5%E9%A1%B9%E7%9B%AE%E5%86%A0%E5%86%9B&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #3b82f6"><div class="card-title"><span class="rnk">5</span>葡萄牙主帅回应未让C罗登场</div>
+<div class="card-meta">热度搜索 · 头条 · 9月28日 <span class="card-tag tag-blue">热搜</span></div>
+<a class="card-link" href="https://www.toutiao.com/trending/7690340857475858970/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2215%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227690340857475858970%22%2C%22hot_board_impr_id%22%3A%2220260928105758987FD173169337308D96%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%91%A1%E8%90%84%E7%89%99%E4%B8%BB%E5%B8%85%E5%9B%9E%E5%BA%94%E6%9C%AA%E8%AE%A9C%E7%BD%97%E7%99%BB%E5%9C%BA%22%7D&rank=&style_id=40132&topic_id=7690340857475858970" target="_blank">阅读原文 →</a></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">2</span>排行榜 6-20</div>
 <ol class="compact-list" start="6">
-<li><strong>中美达成300亿美元对等降税安排</strong> <span class="src">[头条]</span></li>
-<li><strong>刘欢生前打算推出专辑《忘记刘欢》</strong> <span class="src">[头条]</span></li>
-<li><strong>刘欢妻子：我永远的爱 永远的痛</strong> <span class="src">[头条]</span></li>
-<li><strong>粟文打破36年亚运会纪录</strong> <span class="src">[头条]</span></li>
-<li><strong>PCB是否会启动新一轮大级别行情</strong> <span class="src">[头条]</span></li>
+<li><strong>亚运会羽毛球比赛0时8分开打引争议</strong> <span class="src">[头条]</span></li>
+<li><strong>亚运会9月28日看点</strong> <span class="src">[头条]</span></li>
 <li><strong>无糖月饼可敞开吃？小心误区</strong> <span class="src">[头条]</span></li>
-<li><strong>“贴瓷砖”和美容美发走上世界级赛场</strong> <span class="src">[头条]</span></li>
-<li><strong>怀念刘欢：音乐永不消逝</strong> <span class="src">[头条]</span></li>
-<li><strong>《歌手》节目已痛失两位“歌王”</strong> <span class="src">[头条]</span></li>
-<li><strong>邓亚萍说国乒不能只靠一个人</strong> <span class="src">[头条]</span></li>
-<li><strong>中美元首白宫互动的五个细节</strong> <span class="src">[头条]</span></li>
-<li><strong>媒体：中国篮球该清醒了</strong> <span class="src">[头条]</span></li>
-<li><strong>CCTV16转播国足vs新西兰的友谊赛</strong> <span class="src">[头条]</span></li>
-<li><strong>人民日报用歌词送别刘欢</strong> <span class="src">[头条]</span></li>
-<li><strong>《甄嬛传》片头片尾曲演唱者均离世</strong> <span class="src">[头条]</span></li>
+<li><strong>罗永浩回应遭实名举报偷税漏税</strong> <span class="src">[头条]</span></li>
+<li><strong>《兰香如故》好看吗</strong> <span class="src">[头条]</span></li>
+<li><strong>当太马遇见锦绣太原</strong> <span class="src">[头条]</span></li>
+<li><strong>刘欢去世前曾被偶遇 网友晒现场视频</strong> <span class="src">[头条]</span></li>
+<li><strong>各地展开巨幅国旗向祖国告白</strong> <span class="src">[头条]</span></li>
+<li><strong>张雪团队回应在意大利被盗</strong> <span class="src">[头条]</span></li>
+<li><strong>严子怡破纪录夺冠</strong> <span class="src">[头条]</span></li>
+<li><strong>国乒的团结永远让人感动</strong> <span class="src">[头条]</span></li>
+<li><strong>那英临时申请弯弯的月亮演唱版权</strong> <span class="src">[头条]</span></li>
+<li><strong>莎拉·布莱曼发文悼念刘欢</strong> <span class="src">[头条]</span></li>
+<li><strong>国足比赛遇到苏超“老熟人”</strong> <span class="src">[头条]</span></li>
+<li><strong>中方对南海岛礁管控范围逐步扩大</strong> <span class="src">[头条]</span></li>
 </ol>
 </div>
 <div class="observation">
@@ -264,7 +265,7 @@ html:`<div class="stats-row">
 },
 education:{
 title:'<span class="icon">🎓</span>教育新闻日报',
-meta:'<span>2026年9月27日 · 周日</span><span class="badge badge-orange">流量Top 20</span>',
+meta:'<span>2026年9月28日 · 周一</span><span class="badge badge-orange">流量Top 20</span>',
 html:`<div class="stats-row">
 <div class="stat-card"><div class="stat-num">20</div><div class="stat-label">热门条目</div></div>
 <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">详细卡片</div></div>
@@ -272,43 +273,44 @@ html:`<div class="stats-row">
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">1</span>流量Top 5（详细）</div>
-<div class="card"><div class="card-title"><span class="rnk">1</span>爷爷接孙子结果载了一车娃</div>
-<div class="card-meta">百度 · 9月27日 <span class="card-tag tag-blue">热搜</span></div>
-<div class="card-summary">近日，河北一地降雨致路段积水，多名小学生被困路边无法通过。一位骑三轮车接孙子放学的老爷爷见状，热心邀请小学生们上车。孩子们争先恐后上车，人数众多甚至“放不下了”。这一温馨画面引发关注，网友感叹爷爷和孩子们都很幸福。</div>
-<a class="card-link" href="https://www.baidu.com/s?wd=%E7%88%B7%E7%88%B7%E6%8E%A5%E5%AD%99%E5%AD%90%E7%BB%93%E6%9E%9C%E8%BD%BD%E4%BA%86%E4%B8%80%E8%BD%A6%E5%A8%83&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">2</span>曝素媛原型成为医生</div>
-<div class="card-meta">百度 · 9月27日 <span class="card-tag tag-blue">热搜</span></div>
-<div class="card-summary">近日，有网友爆料称电影《素媛》的原型人物“娜英”不仅考上了大学，还凭借自己的努力完成了学业，已成为了优秀的医生。</div>
-<a class="card-link" href="https://www.baidu.com/s?wd=%E6%9B%9D%E7%B4%A0%E5%AA%9B%E5%8E%9F%E5%9E%8B%E6%88%90%E4%B8%BA%E5%8C%BB%E7%94%9F&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">3</span>水均益缅怀刘欢称“痛失我欢”</div>
-<div class="card-meta">百度 · 9月27日 <span class="card-tag tag-blue">热搜</span></div>
-<div class="card-summary">9月26日，对外经济贸易大学与芒果V基金发布讣告，确认刘欢于9月25日上午在上海病逝，享年63岁。刘欢多年好友、著名主持人水均益在微博上痛悼挚友，他用了四个字“痛失我欢”。</div>
-<a class="card-link" href="https://www.baidu.com/s?wd=%E6%B0%B4%E5%9D%87%E7%9B%8A%E7%BC%85%E6%80%80%E5%88%98%E6%AC%A2%E7%A7%B0%E2%80%9C%E7%97%9B%E5%A4%B1%E6%88%91%E6%AC%A2%E2%80%9D&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">4</span>那英演唱会唱《弯弯的月亮》</div>
-<div class="card-meta">头条 · 9月27日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7689380136696729131/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227689380136696729131%22%2C%22hot_board_impr_id%22%3A%2220260927105927AB123826AFBDF42BE486%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%82%A3%E8%8B%B1%E6%BC%94%E5%94%B1%E4%BC%9A%E5%94%B1%E3%80%8A%E5%BC%AF%E5%BC%AF%E7%9A%84%E6%9C%88%E4%BA%AE%E3%80%8B%22%7D&rank=&style_id=40132&topic_id=7689380136696729131" target="_blank">阅读原文 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">5</span>中美元首会晤引发热烈国际反响</div>
-<div class="card-meta">头条 · 9月27日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/article/7689508915234505250" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">1</span>教育部原副部长鲁昕被查</div>
+<div class="card-meta">头条 · 9月28日 <span class="card-tag tag-blue">热搜</span></div>
+<a class="card-link" href="https://www.toutiao.com/trending/7690399854304395307/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227690399854304395307%22%2C%22hot_board_impr_id%22%3A%2220260928105758987FD173169337308D96%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%95%99%E8%82%B2%E9%83%A8%E5%8E%9F%E5%89%AF%E9%83%A8%E9%95%BF%E9%B2%81%E6%98%95%E8%A2%AB%E6%9F%A5%22%7D&rank=&style_id=40132&topic_id=7690399854304395307" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">2</span>白岩松评幼师举报幼儿园后厨</div>
+<div class="card-meta">百度 · 9月28日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">近日，南京江北新区联合调查组通报证实，南京信息工程大学附属幼儿园食品卫生问题属实。此前，该园安全员王老师多次反映后厨用炒菜锅洗拖把等乱象无果，于9月14日辞职后在朋友圈曝光此事。对此白岩松发声力挺，为少年儿童的健康，这正当之举在现实中也并不</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E7%99%BD%E5%B2%A9%E6%9D%BE%E8%AF%84%E5%B9%BC%E5%B8%88%E4%B8%BE%E6%8A%A5%E5%B9%BC%E5%84%BF%E5%9B%AD%E5%90%8E%E5%8E%A8&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">3</span>父子“手搓”多个微缩版大国重器</div>
+<div class="card-meta">百度 · 9月28日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">上海13岁男孩段砚觉与父亲自建家庭实验室，用3D打印“手搓”出航母电磁弹射器、涡扇涡喷发动机等微缩大国重器模型，成为上海科技馆首批家庭志愿者。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E7%88%B6%E5%AD%90%E2%80%9C%E6%89%8B%E6%90%93%E2%80%9D%E5%A4%9A%E4%B8%AA%E5%BE%AE%E7%BC%A9%E7%89%88%E5%A4%A7%E5%9B%BD%E9%87%8D%E5%99%A8&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">4</span>技校毕业生入职北大 意义重大</div>
+<div class="card-meta">百度 · 9月28日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">近日，据媒体报道，河南化工技师学院2012年开设了全国唯一的电子显微镜技术专业。截至2026年6月，该专业已经向北京大学、浙江大学、中科院等顶尖科研平台输送496名毕业生，其中进入北京大学相关实验室的达101人。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E6%8A%80%E6%A0%A1%E6%AF%95%E4%B8%9A%E7%94%9F%E5%85%A5%E8%81%8C%E5%8C%97%E5%A4%A7+%E6%84%8F%E4%B9%89%E9%87%8D%E5%A4%A7&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">5</span>乌克兰留学生18年后重回赣州</div>
+<div class="card-meta">百度 · 9月28日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">曾在赣州求学的乌克兰留学生耶果，时隔18年重返赣州，在博物馆看到傩舞面具后当场学跳傩舞，坦言18年前初见时曾感到害怕。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E4%B9%8C%E5%85%8B%E5%85%B0%E7%95%99%E5%AD%A6%E7%94%9F18%E5%B9%B4%E5%90%8E%E9%87%8D%E5%9B%9E%E8%B5%A3%E5%B7%9E&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">2</span>排行榜 6-20</div>
 <ol class="compact-list" start="6">
-<li><strong>中国男足亚运会半决赛将对阵韩国</strong> <span class="src">[头条]</span></li>
-<li><strong>李在明谴责乌方泄露朝鲜战俘移送韩国</strong> <span class="src">[头条]</span></li>
-<li><strong>中美达成300亿美元对等降税安排</strong> <span class="src">[头条]</span></li>
-<li><strong>刘欢生前打算推出专辑《忘记刘欢》</strong> <span class="src">[头条]</span></li>
-<li><strong>刘欢妻子：我永远的爱 永远的痛</strong> <span class="src">[头条]</span></li>
-<li><strong>粟文打破36年亚运会纪录</strong> <span class="src">[头条]</span></li>
-<li><strong>PCB是否会启动新一轮大级别行情</strong> <span class="src">[头条]</span></li>
+<li><strong>男生离校后坠亡 家属向学校索赔56万</strong> — 近日，湖北枣阳市法院判决某中学对高二男生宋某坠亡担责三成，保险公司赔偿其父母33.8万余元。此前，4月6日晚自习后，宋某 <span class="src">[百度]</span></li>
+<li><strong>00后“淡定哥”夺得世赛焊接项目冠军</strong> — 9月27日，第48届世界技能大赛在上海落幕，22岁四川“00后”选手‌赵钱森‌夺得‌焊接项目冠军‌。赛后面对采访他淡定回 <span class="src">[百度]</span></li>
+<li><strong>葡萄牙主帅回应未让C罗登场</strong> <span class="src">[头条]</span></li>
+<li><strong>亚运会羽毛球比赛0时8分开打引争议</strong> <span class="src">[头条]</span></li>
+<li><strong>亚运会9月28日看点</strong> <span class="src">[头条]</span></li>
 <li><strong>无糖月饼可敞开吃？小心误区</strong> <span class="src">[头条]</span></li>
-<li><strong>“贴瓷砖”和美容美发走上世界级赛场</strong> <span class="src">[头条]</span></li>
-<li><strong>怀念刘欢：音乐永不消逝</strong> <span class="src">[头条]</span></li>
-<li><strong>《歌手》节目已痛失两位“歌王”</strong> <span class="src">[头条]</span></li>
-<li><strong>邓亚萍说国乒不能只靠一个人</strong> <span class="src">[头条]</span></li>
-<li><strong>中美元首白宫互动的五个细节</strong> <span class="src">[头条]</span></li>
-<li><strong>媒体：中国篮球该清醒了</strong> <span class="src">[头条]</span></li>
-<li><strong>CCTV16转播国足vs新西兰的友谊赛</strong> <span class="src">[头条]</span></li>
+<li><strong>罗永浩回应遭实名举报偷税漏税</strong> <span class="src">[头条]</span></li>
+<li><strong>《兰香如故》好看吗</strong> <span class="src">[头条]</span></li>
+<li><strong>当太马遇见锦绣太原</strong> <span class="src">[头条]</span></li>
+<li><strong>刘欢去世前曾被偶遇 网友晒现场视频</strong> <span class="src">[头条]</span></li>
+<li><strong>各地展开巨幅国旗向祖国告白</strong> <span class="src">[头条]</span></li>
+<li><strong>张雪团队回应在意大利被盗</strong> <span class="src">[头条]</span></li>
+<li><strong>严子怡破纪录夺冠</strong> <span class="src">[头条]</span></li>
+<li><strong>国乒的团结永远让人感动</strong> <span class="src">[头条]</span></li>
+<li><strong>那英临时申请弯弯的月亮演唱版权</strong> <span class="src">[头条]</span></li>
 </ol>
 </div>
 <div class="observation">
@@ -318,23 +320,23 @@ html:`<div class="stats-row">
 },
 automation:{
 title:'<span class="icon">⚡</span>办公自动化学习视频',
-meta:'<span>2026年9月27日 · 周日</span><span class="badge badge-orange">播放量Top 20</span>',
+meta:'<span>2026年9月28日 · 周一</span><span class="badge badge-orange">播放量Top 20</span>',
 html:`<div class="stats-row">
 <div class="stat-card"><div class="stat-num">20</div><div class="stat-label">热门视频</div></div>
-<div class="stat-card"><div class="stat-num">1237.1万</div><div class="stat-label">最高播放</div></div>
+<div class="stat-card"><div class="stat-num">1237.4万</div><div class="stat-label">最高播放</div></div>
 <div class="stat-card"><div class="stat-num">B站</div><div class="stat-label">主平台</div></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">1</span>播放量Top 5（详细）</div>
 <div class="card"><div class="card-title"><span class="rnk">1</span>EXCEL教程 | 拜托三连了！全B站最用心（没有之一）的EXCEL免费课程！OFFICE/WPS/表格/EXCEL函数/EXCEL技巧/数据分析/办公软件</div>
-<div class="card-meta">B站 · UP主：别怕Ai · 播放量：1237.1万 <span class="card-tag tag-blue">EXCEL</span><span class="card-tag tag-blue">EXCEL技巧</span></div>
+<div class="card-meta">B站 · UP主：别怕Ai · 播放量：1237.4万 <span class="card-tag tag-blue">EXCEL</span><span class="card-tag tag-blue">EXCEL技巧</span></div>
 <div class="card-summary">B生所学已更新2023年最新AI&PPT新课程：BV1t14y1C7P4 ，教你利用AI提高PPT生产力，真正实现高效办公 
 
 欢迎来到我们的B生所学系列课的第三辑-Excel系列课程；本系列课程是由我们EXCEL老师：若梦老师为大家带来</div>
 <div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:100.0%"></span></span> 100.0%</div>
 <a class="card-link" href="http://www.bilibili.com/video/av547421812" target="_blank">观看视频 →</a></div>
 <div class="card"><div class="card-title"><span class="rnk">2</span>PPT教程 | PPT高手之路，零基础做出高逼格PPT，免费PPT设计制作技巧教学！OFFICE/WPS/演示/幻灯片/PPT模板/keynote/汇报/总结</div>
-<div class="card-meta">B站 · UP主：L叔的播客 · 播放量：1192.0万 <span class="card-tag tag-blue">职场</span><span class="card-tag tag-blue">PPT课程</span></div>
+<div class="card-meta">B站 · UP主：L叔的播客 · 播放量：1192.4万 <span class="card-tag tag-blue">职场</span><span class="card-tag tag-blue">PPT课程</span></div>
 <div class="card-summary">B生所学已更新2023年最新AI&PPT新课程：BV1t14y1C7P4 ，教你利用AI提高PPT生产力，真正实现高效办公
 
 站酷百万人气设计师，演界网“首席”；
@@ -342,7 +344,7 @@ html:`<div class="stats-row">
 <div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:96.4%"></span></span> 96.4%</div>
 <a class="card-link" href="http://www.bilibili.com/video/av840834065" target="_blank">观看视频 →</a></div>
 <div class="card"><div class="card-title"><span class="rnk">3</span>2026必看！全网最新最细最实用Excel零基础入门到精通全套教程！专为零基础小白打造！内容富含Excel表格基础操作、实用函数讲解、项目实战等！</div>
-<div class="card-meta">B站 · UP主：之了学吧 · 播放量：627.1万 <span class="card-tag tag-blue">EXCEL</span><span class="card-tag tag-blue">2023最新</span></div>
+<div class="card-meta">B站 · UP主：之了学吧 · 播放量：627.9万 <span class="card-tag tag-blue">EXCEL</span><span class="card-tag tag-blue">2023最新</span></div>
 <div class="card-summary">搜索公众号【之了学吧】，点击添加助教老师获取视频文档
 
 Word零基础到精通→BV17v4y1j7CY
@@ -356,44 +358,39 @@ VBA实战→BV1xx4y1N7mo
 <div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:50.7%"></span></span> 50.7%</div>
 <a class="card-link" href="http://www.bilibili.com/video/av737382980" target="_blank">观看视频 →</a></div>
 <div class="card"><div class="card-title"><span class="rnk">4</span>【全套】Word自学教程从小白到高手超详细讲解（Word教程、Word零基础入门起步）</div>
-<div class="card-meta">B站 · UP主：爱知趣教育 · 播放量：626.5万 <span class="card-tag tag-blue">word高效办公</span><span class="card-tag tag-blue">word教程视频全集</span></div>
+<div class="card-meta">B站 · UP主：爱知趣教育 · 播放量：626.8万 <span class="card-tag tag-blue">word高效办公</span><span class="card-tag tag-blue">word教程视频全集</span></div>
 <div class="card-summary">欢迎加入Word学习群：175453351期待你加入
 我们只做精品课
 本套教程对word软件从基础入门到深入应用做了系统性的介绍，包括基本功能的使用，及实际提高的应用，文本的高效选择，图文混排，个人简历的设计，封面的设计等，内容详尽，语言简</div>
-<div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:50.6%"></span></span> 50.6%</div>
+<div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:50.7%"></span></span> 50.7%</div>
 <a class="card-link" href="http://www.bilibili.com/video/av9261220" target="_blank">观看视频 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">5</span>全网最良心的【数据分析自学课程】它来啦！必备的Excel/SQL/Tableau/Python|求职|简历面试|产品|大厂分析报告制作、戴师兄数据分析入门免费课</div>
-<div class="card-meta">B站 · UP主：戴戴戴师兄 · 播放量：599.6万 <span class="card-tag tag-blue">数据分析正式课程</span><span class="card-tag tag-blue">SQL</span></div>
-<div class="card-summary">7天快速入门🔥按照笔记顺序学习即可！
-
-收藏加关注！数分不迷路！
-
-26年最新版【自学数据分析5.0】已新建文件夹
-
-快来和1000+小伙伴抱团学习数据分析吧！</div>
-<div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:48.5%"></span></span> 48.5%</div>
-<a class="card-link" href="http://www.bilibili.com/video/av931313129" target="_blank">观看视频 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">5</span>【2022最新全套】Excel零基础入门进阶到函数，Excel自学教程从小白到高手入门起步超详细实操教程（Excel教程、Excel函数、Excel技巧）</div>
+<div class="card-meta">B站 · UP主：财务大管家 · 播放量：523.5万 <span class="card-tag tag-blue">教育</span><span class="card-tag tag-blue">EXCEL函数</span></div>
+<div class="card-summary">https://www.youtube.com/playlist?list=PL7enJ2-v6SPm-EHMuRMCG7R7C-vXQugNM
+Excel自学教程从小白到高手超详细实操教程</div>
+<div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:42.3%"></span></span> 42.3%</div>
+<a class="card-link" href="http://www.bilibili.com/video/av337823979" target="_blank">观看视频 →</a></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">2</span>完整排行榜 6-20</div>
 <table>
 <thead><tr><th>序号</th><th>标题</th><th>平台</th><th>UP主</th><th>难度</th><th>链接</th></tr></thead>
 <tbody>
-<tr><td>6</td><td>Excel教程 | 拜托三连了！全 B 站最用心（没有之一）的Excel小白到高手系列教程，职场人必存全套office办公软件教学</td><td>B站</td><td>爱知趣教育</td><td>入门</td><td><a href="http://www.bilibili.com/video/av5614436" target="_blank">观看→</a></td></tr>
-<tr><td>7</td><td>【2022最新全套】Excel零基础入门进阶到函数，Excel自学教程从小白到高手入门起步超详细实操教程（Excel教程、Excel函数、Excel技巧）</td><td>B站</td><td>财务大管家</td><td>进阶</td><td><a href="http://www.bilibili.com/video/av337823979" target="_blank">观看→</a></td></tr>
-<tr><td>8</td><td>PPT教程 | PPT高手之路，零基础做出高逼格PPT，免费PPT设计制作技巧教学！OFFICE/WPS/演示/幻灯片/PPT模板/keynote/汇报/总结</td><td>B站</td><td>别怕Ai</td><td>入门</td><td><a href="http://www.bilibili.com/video/av291840257" target="_blank">观看→</a></td></tr>
-<tr><td>9</td><td>【全套】PPT自学教程从小白到高手超详细讲解（PowerPoint教程、PPT零基础入门起步）</td><td>B站</td><td>爱知趣教育</td><td>入门</td><td><a href="http://www.bilibili.com/video/av12053279" target="_blank">观看→</a></td></tr>
-<tr><td>10</td><td>5分钟，教你做个自动化软件拿来办公、刷副本、回微信 | 源码公开，开箱即用</td><td>B站</td><td>不高兴就喝水</td><td>进阶</td><td><a href="http://www.bilibili.com/video/av806829194" target="_blank">观看→</a></td></tr>
-<tr><td>11</td><td>Word教程 | 拜托三连了！全B站最用心（没有之一）的Word免费课程！OFFICE/WPS/办公软件/排版/论文/毕业/文档/行政/打印/标书/报告/方案</td><td>B站</td><td>别怕Ai</td><td>入门</td><td><a href="http://www.bilibili.com/video/av761944292" target="_blank">观看→</a></td></tr>
-<tr><td>12</td><td>【WPS】全套新手自学教程，从零开始超详细讲解</td><td>B站</td><td>WPS学堂</td><td>入门</td><td><a href="http://www.bilibili.com/video/av65469718" target="_blank">观看→</a></td></tr>
-<tr><td>13</td><td>Excel2016教程，Excel零基础教程，Excel2016完全自学教程 office零基础入门学习 excel表格制作从入门到精通 电脑基础办公自动化</td><td>B站</td><td>课程分享-小野君</td><td>入门</td><td><a href="http://www.bilibili.com/video/av33678186" target="_blank">观看→</a></td></tr>
-<tr><td>14</td><td>【办公软件实操】Excel、Word自学教程 从小白到高手 零基础入门起步 表格/EXCEL函数/EXCEL技巧/数据分析/办公软件教学</td><td>B站</td><td>职上充电站</td><td>入门</td><td><a href="http://www.bilibili.com/video/av811115813" target="_blank">观看→</a></td></tr>
-<tr><td>15</td><td>vlookup函数使用方法详解</td><td>B站</td><td>材料天地</td><td>入门</td><td><a href="http://www.bilibili.com/video/av809011041" target="_blank">观看→</a></td></tr>
-<tr><td>16</td><td>学12分钟就能做出PPT【ppt简易制作教程】干货全拿走，开店就赚钱</td><td>B站</td><td>呆伯特PPT</td><td>入门</td><td><a href="http://www.bilibili.com/video/av291584001" target="_blank">观看→</a></td></tr>
-<tr><td>17</td><td>【自学WPS教程】2026必看！带你真正掌握WPS办公！全网最新最细最实用WPS零基础入门到精通全套教程！内含Excel基础操作、函数设计、数据透视表等</td><td>B站</td><td>之了学吧</td><td>入门</td><td><a href="http://www.bilibili.com/video/av273997011" target="_blank">观看→</a></td></tr>
-<tr><td>18</td><td>【Office教程】word全套新手自学教程，从零基础到精通</td><td>B站</td><td>大耳朵资源</td><td>入门</td><td><a href="http://www.bilibili.com/video/av628562474" target="_blank">观看→</a></td></tr>
-<tr><td>19</td><td>EXCEL表格的基础操作基础教程，新手入门</td><td>B站</td><td>閑来無事</td><td>入门</td><td><a href="http://www.bilibili.com/video/av544777585" target="_blank">观看→</a></td></tr>
-<tr><td>20</td><td>【2020年9月合集 全107集】Excel Power Query 零基础入门到M函数  Excel PowerQuery教程</td><td>B站</td><td>孙兴华zz</td><td>入门</td><td><a href="http://www.bilibili.com/video/av669719554" target="_blank">观看→</a></td></tr>
+<tr><td>6</td><td>【全套】PPT自学教程从小白到高手超详细讲解（PowerPoint教程、PPT零基础入门起步）</td><td>B站</td><td>爱知趣教育</td><td>入门</td><td><a href="http://www.bilibili.com/video/av12053279" target="_blank">观看→</a></td></tr>
+<tr><td>7</td><td>5分钟，教你做个自动化软件拿来办公、刷副本、回微信 | 源码公开，开箱即用</td><td>B站</td><td>不高兴就喝水</td><td>进阶</td><td><a href="http://www.bilibili.com/video/av806829194" target="_blank">观看→</a></td></tr>
+<tr><td>8</td><td>WPS，没想到背刺电脑性能的居然是你！</td><td>B站</td><td>宇浩玩数码</td><td>入门</td><td><a href="http://www.bilibili.com/video/av116810695382518" target="_blank">观看→</a></td></tr>
+<tr><td>9</td><td>Word教程 | 拜托三连了！全B站最用心（没有之一）的Word免费课程！OFFICE/WPS/办公软件/排版/论文/毕业/文档/行政/打印/标书/报告/方案</td><td>B站</td><td>别怕Ai</td><td>入门</td><td><a href="http://www.bilibili.com/video/av761944292" target="_blank">观看→</a></td></tr>
+<tr><td>10</td><td>【WPS】全套新手自学教程，从零开始超详细讲解</td><td>B站</td><td>WPS学堂</td><td>入门</td><td><a href="http://www.bilibili.com/video/av65469718" target="_blank">观看→</a></td></tr>
+<tr><td>11</td><td>【办公软件实操】Excel、Word自学教程 从小白到高手 零基础入门起步 表格/EXCEL函数/EXCEL技巧/数据分析/办公软件教学</td><td>B站</td><td>职上充电站</td><td>入门</td><td><a href="http://www.bilibili.com/video/av811115813" target="_blank">观看→</a></td></tr>
+<tr><td>12</td><td>【2026最新Codex】Codex保姆级完整教程-Codex新手保姆级教程-最强AI助手！从入门到进阶，22分钟速通Codex！【附教程文档安装包】</td><td>B站</td><td>编程大佬陈悠秀</td><td>进阶</td><td><a href="http://www.bilibili.com/video/av116707129561197" target="_blank">观看→</a></td></tr>
+<tr><td>13</td><td>学12分钟就能做出PPT【ppt简易制作教程】干货全拿走，开店就赚钱</td><td>B站</td><td>呆伯特PPT</td><td>入门</td><td><a href="http://www.bilibili.com/video/av291584001" target="_blank">观看→</a></td></tr>
+<tr><td>14</td><td>【自学WPS教程】2026必看！带你真正掌握WPS办公！全网最新最细最实用WPS零基础入门到精通全套教程！内含Excel基础操作、函数设计、数据透视表等</td><td>B站</td><td>之了学吧</td><td>入门</td><td><a href="http://www.bilibili.com/video/av273997011" target="_blank">观看→</a></td></tr>
+<tr><td>15</td><td>【Office教程】word全套新手自学教程，从零基础到精通</td><td>B站</td><td>大耳朵资源</td><td>入门</td><td><a href="http://www.bilibili.com/video/av628562474" target="_blank">观看→</a></td></tr>
+<tr><td>16</td><td>EXCEL表格的基础操作基础教程，新手入门</td><td>B站</td><td>閑来無事</td><td>入门</td><td><a href="http://www.bilibili.com/video/av544777585" target="_blank">观看→</a></td></tr>
+<tr><td>17</td><td>千锋教育Python全套视频教程，轻松掌握Excel、Word、PPT、邮件、爬虫、office办公自动化（宋如宁主讲）</td><td>B站</td><td>千锋教育</td><td>入门</td><td><a href="http://www.bilibili.com/video/av207647192" target="_blank">观看→</a></td></tr>
+<tr><td>18</td><td>2026最新Figma零基础完全入门教程 | 零基础学会Figma | Ul设计入门教程</td><td>B站</td><td>六边形Evan</td><td>入门</td><td><a href="http://www.bilibili.com/video/av115593390856894" target="_blank">观看→</a></td></tr>
+<tr><td>19</td><td>快速掌握Excel的所有功能  【Excel教程】</td><td>B站</td><td>乔治的杰克船长</td><td>入门</td><td><a href="http://www.bilibili.com/video/av853565332" target="_blank">观看→</a></td></tr>
+<tr><td>20</td><td>《零基础学做PPT 》PPT教程，零基础学做PPT</td><td>B站</td><td>哔哩哔哩课堂专栏</td><td>入门</td><td><a href="http://www.bilibili.com/video/av514000850" target="_blank">观看→</a></td></tr>
 </tbody>
 </table>
 </div>
