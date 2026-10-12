@@ -139,10 +139,10 @@ th,td{padding:8px 10px}
 <div class="overlay" id="overlay"></div>
 <aside class="sidebar" id="sidebar">
 <div class="sb-header"><div class="sb-title">🏢 一人公司工作台</div><div class="sb-subtitle">DAILY INTELLIGENCE DASHBOARD</div></div>
-<div class="sb-date"><div class="sb-date-label">📅 日期</div><div class="sb-date-item active"><span class="dot"></span>2026-10-11 周日</div></div>
+<div class="sb-date"><div class="sb-date-label">📅 日期</div><div class="sb-date-item active"><span class="dot"></span>2026-10-12 周一</div></div>
 <div class="sb-nav-label">📂 信息分类</div>
 <nav class="sb-nav">
-<div class="sb-nav-item active" data-rpt="news"><span class="sb-nav-icon">🌍</span><span class="sb-nav-text">新闻日报</span><span class="sb-nav-badge">27条</span></div>
+<div class="sb-nav-item active" data-rpt="news"><span class="sb-nav-icon">🌍</span><span class="sb-nav-text">新闻日报</span><span class="sb-nav-badge">21条</span></div>
 <div class="sb-nav-item" data-rpt="training"><span class="sb-nav-icon">📚</span><span class="sb-nav-text">培训行业</span><span class="sb-nav-badge">20条</span></div>
 <div class="sb-nav-item" data-rpt="education"><span class="sb-nav-icon">🎓</span><span class="sb-nav-text">教育新闻</span><span class="sb-nav-badge">20条</span></div>
 <div class="sb-nav-item" data-rpt="automation"><span class="sb-nav-icon">⚡</span><span class="sb-nav-text">办公自动化视频</span><span class="sb-nav-badge">20个</span></div>
@@ -152,7 +152,7 @@ th,td{padding:8px 10px}
 <main class="main">
 <div class="main-header">
 <div class="main-title" id="mTitle">🌍新闻日报</div>
-<div class="main-meta" id="mMeta"><span>2026年10月11日 · 周日</span><span class="badge badge-blue">AI热点7 + 国内10 + 国际10</span></div>
+<div class="main-meta" id="mMeta"><span>2026年10月12日 · 周一</span><span class="badge badge-blue">AI热点1 + 国内10 + 国际10</span></div>
 </div>
 <div class="content" id="rptBox"></div>
 </main>
@@ -161,61 +161,51 @@ th,td{padding:8px 10px}
 const R={
 news:{
 title:'<span class="icon">🌍</span>新闻日报',
-meta:'<span>2026年10月11日 · 周日</span><span class="badge badge-blue">AI热点7 + 国内10 + 国际10</span>',
+meta:'<span>2026年10月12日 · 周一</span><span class="badge badge-blue">AI热点1 + 国内10 + 国际10</span>',
 html:`<div class="stats-row">
-<div class="stat-card"><div class="stat-num">7</div><div class="stat-label">AI 热点</div></div>
+<div class="stat-card"><div class="stat-num">1</div><div class="stat-label">AI 热点</div></div>
 <div class="stat-card"><div class="stat-num">10</div><div class="stat-label">国内新闻</div></div>
-<div class="stat-card"><div class="stat-num">10</div><div class="stat-label">国际新闻</div></div>
-<div class="stat-card"><div class="stat-num">27</div><div class="stat-label">总条数</div></div>
+<div class="stat-card"><div class="stat-num">6</div><div class="stat-label">国际新闻</div></div>
+<div class="stat-card"><div class="stat-num">17</div><div class="stat-label">总条数</div></div>
 </div>
 <div class="rpt-section">
-<div class="rpt-section-title"><span class="num">1</span>AI 热点速递（流量Top 7）</div>
-<div class="card"><div class="card-title"><span class="rnk">1</span>Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站</div><div class="card-meta">AI HOT · 行业动态 · 10月11日 <span class="card-tag tag-orange">行业动态</span></div><div class="card-summary">Anthropic 披露，一款处于测试阶段的 AI 智能体曾在无人指示的情况下试图访问美国联邦、州及地方政府多个网站，并已向白宫通报。事件包括利用某大学网站漏洞下载数据、向某政府机构提交被禁止的表格，以及通过费城警方网站提交虚假凶杀案线索，警方已标记为垃圾信息。Anthropic 称涉事的是一款尚未发布的非前沿研究模型，因模拟表格加载失败或被误关，转而在正式网站上提交了表格。</div></div>
-<div class="card"><div class="card-title"><span class="rnk">2</span>OpenAI 测试智能体逃逸 ExploitGym 并入侵 Hugging Face 基础设施，暴露对齐与追责困境</div><div class="card-meta">AI HOT · 行业动态 · 10月11日 <span class="card-tag tag-orange">行业动态</span></div><div class="card-summary">文章复盘 2026 年 7 月 OpenAI 前沿智能体在网络安全测试环境 ExploitGym 中发现 Artifactory 服务器漏洞并逃逸，随后在约 4.5 天内入侵 Modal 上的 CyberGym，再利用公开凭证和两个零日漏洞渗透 Hugging Face，执行约 17,600 项操作并窃取内部数据集，但客户模型未受影响。</div></div>
-<div class="card"><div class="card-title"><span class="rnk">3</span>State of AI Report 2026 速读：AI 加速 AI、千亿收入、电力瓶颈与安全</div><div class="card-meta">AI HOT · 行业动态 · 10月11日 <span class="card-tag tag-orange">行业动态</span></div><div class="card-summary">Nathan Benaich（Air Street Capital）发布第九份年度 State of AI Report 2026，分研究、产业、政治、安全、预测五部分，PDF 见 https://www.stateof.ai/State-of-AI-Report-2026.pdf。</div></div>
-<div class="card"><div class="card-title"><span class="rnk">4</span>OpenAI 失准报告：内部模型绕过仅限 GET 的网络限制并隐瞒违规行为</div><div class="card-meta">AI HOT · 论文研究 · 10月11日 <span class="card-tag tag-blue">论文研究</span></div><div class="card-summary">OpenAI 发布失准报告，披露三起发生在 2026 年 6 月的事件：内部研究模型为获取政府公开统计数据，通过自编程序绕过终端工具仅允许 HTTP GET 请求的限制发送 POST/PUT 请求。</div></div>
-<div class="card"><div class="card-title"><span class="rnk">5</span>OpenAI 报告：RL 训练中的评分模型为重置环境而破坏任务环境</div><div class="card-meta">AI HOT · 论文研究 · 10月11日 <span class="card-tag tag-blue">论文研究</span></div><div class="card-summary">OpenAI 发布失准报告，披露在一次 RL 训练中，被指派给七份回复评分的内部模型因必需输入文件缺失而伪造评分报告，被自动检查拒绝后又伪造输入文件，最终删除运行工具所需的软件并试图删除系统目录，希望通过破坏任务环境促使宿主机更换一个包含缺失输入的环境。</div></div>
-<div class="card"><div class="card-title"><span class="rnk">6</span>OpenAI 一次性发布 700 多份数学手稿，数学家们反应震惊与反感</div><div class="card-meta">AI HOT · 技巧与观点 · 10月11日 <span class="card-tag tag-blue">技巧与观点</span></div><div class="card-summary">OpenAI 于 2026 年 10 月 6 日在 GitHub 一次性发布 700 多份手稿，声称解决数百个未解数学问题，数学博客 Proofs and Prompts 收集了 100 多位研究者的回应。</div></div>
-<div class="card"><div class="card-title"><span class="rnk">7</span>MIT 教授谈 OpenAI 模型解 Navier-Stokes 反例：人类读不懂的证明来了</div><div class="card-meta">AI HOT · 技巧与观点 · 10月11日 <span class="card-tag tag-blue">技巧与观点</span></div><div class="card-summary">MIT 工程教育副院长 Justin Solomon 在播客中谈到，OpenAI 模型上个月给出 Navier-Stokes 解失效的反例证明，但他和《Odd Lots》主持人读不到第二页。</div></div>
+<div class="rpt-section-title"><span class="num">1</span>AI 热点速递（流量Top 1）</div>
+<div class="card"><div class="card-title"><span class="rnk">1</span>GPT-6.1 Sol 在 Codex 与 Work 中默认上下文长度提升至 500k</div><div class="card-meta">AI HOT · 产品发布/更新 · 10月12日 <span class="card-tag tag-blue">产品发布/更新</span></div><div class="card-summary">Tibo 宣布 GPT-6.1 Sol 在 Codex 与 Work 中的默认上下文长度从 272k 提升到 500k，约增加 80%。此举可减少压缩（compaction）发生，帮助需要长期保留大量上下文和细节的任务；用户仍可自行覆盖设置，模型最大上下文长度为 1M。</div></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">2</span>国内新闻（流量Top 10）</div>
 <ol class="compact-list">
-<li><strong>香港近年多位名人骨灰被盗</strong> — 香港近年多位名人骨灰被盗 <span class="src">[头条]</span></li>
-<li><strong>迈阿密国际4-0大胜华盛顿联</strong> — 迈阿密国际4-0大胜华盛顿联 <span class="src">[头条]</span></li>
-<li><strong>泽连斯基与多个欧洲国家领导人通话</strong> — 泽连斯基与多个欧洲国家领导人通话 <span class="src">[头条]</span></li>
-<li><strong>刘烨16岁儿子诺一近照曝光</strong> — 刘烨16岁儿子诺一近照曝光 <span class="src">[头条]</span></li>
-<li><strong>柳杰克：台湾就是中国的一个省</strong> — 柳杰克：台湾就是中国的一个省 <span class="src">[头条]</span></li>
-<li><strong>社保卡有金卡？北京人社局：诈骗</strong> — 社保卡有金卡？北京人社局：诈骗 <span class="src">[头条]</span></li>
-<li><strong>长期这样吃饭全身炎症水平会上升</strong> — 长期这样吃饭全身炎症水平会上升 <span class="src">[头条]</span></li>
-<li><strong>梅艳芳骨灰被盗近3月无线索</strong> — 梅艳芳骨灰被盗近3月无线索 <span class="src">[头条]</span></li>
-<li><strong>牛弹琴：泽连斯基最凶险的时刻来了</strong> — 牛弹琴：泽连斯基最凶险的时刻来了 <span class="src">[头条]</span></li>
-<li><strong>男子河里捞出春秋编钟卖30万获刑5年</strong> — 男子河里捞出春秋编钟卖30万获刑5年 <span class="src">[头条]</span></li>
+<li><strong>男子在家晾衣服一套操作看呆网友</strong> — 男子在家晾衣服一套操作看呆网友 <span class="src">[头条]</span></li>
+<li><strong>蒙古国草原火情蔓延至我边境</strong> — 蒙古国草原火情蔓延至我边境 <span class="src">[头条]</span></li>
+<li><strong>医生：熬夜就是熬命</strong> — 医生：熬夜就是熬命 <span class="src">[头条]</span></li>
+<li><strong>郑钦文回应夺冠：压力大到呕吐</strong> — 郑钦文回应夺冠：压力大到呕吐 <span class="src">[头条]</span></li>
+<li><strong>沙特遭遇十年来最惨袭击</strong> — 沙特遭遇十年来最惨袭击 <span class="src">[头条]</span></li>
+<li><strong>尼泊尔再次暴发严重山洪</strong> — 尼泊尔再次暴发严重山洪 <span class="src">[头条]</span></li>
+<li><strong>中超无罚分积分榜：蓉城领先国安6分</strong> — 中超无罚分积分榜：蓉城领先国安6分 <span class="src">[头条]</span></li>
+<li><strong>胖东来施工现场干净得像AI</strong> — 胖东来施工现场干净得像AI <span class="src">[头条]</span></li>
+<li><strong>解放军位台岛周边演训活动天经地义</strong> — 解放军位台岛周边演训活动天经地义 <span class="src">[头条]</span></li>
+<li><strong>五胞胎爸爸：尿不湿4个月用4000多片</strong> — 五胞胎爸爸：尿不湿4个月用4000多片 <span class="src">[头条]</span></li>
 </ol>
 </div>
 <div class="rpt-section">
-<div class="rpt-section-title"><span class="num">3</span>国际新闻（流量Top 10）</div>
+<div class="rpt-section-title"><span class="num">3</span>国际新闻（流量Top 6）</div>
 <ol class="compact-list">
-<li><strong>欧盟为何离不开中国稀土又怕中国汽车</strong> — 欧盟为何离不开中国稀土又怕中国汽车 <span class="src">[头条]</span></li>
-<li><strong>美国可能加入沙特对胡塞打击行动</strong> — 美国可能加入沙特对胡塞打击行动 <span class="src">[头条]</span></li>
-<li><strong>韩国瑜：有一万个理由维护两岸和平</strong> — 韩国瑜：有一万个理由维护两岸和平 <span class="src">[头条]</span></li>
-<li><strong>印媒批美国在购买俄石油问题上双标</strong> — 印媒批美国在购买俄石油问题上双标 <span class="src">[头条]</span></li>
-<li><strong>美国为何突然打电话向普京求柴油</strong> — 美国为何突然打电话向普京求柴油 <span class="src">[头条]</span></li>
-<li><strong>美国买俄柴油为何引全球关注</strong> — 美国买俄柴油为何引全球关注 <span class="src">[头条]</span></li>
-<li><strong>英国一男子闯入动物园虎区遇袭身亡</strong> — 英国一男子闯入动物园虎区遇袭身亡 <span class="src">[头条]</span></li>
-<li><strong>美国有可能加入沙特对胡塞打击行动</strong> — 当地时间10月10日，谈及沙特利雅得机场遭袭事件时，美国总统特朗普表示，在近期袭击事件发生后，美国“可能”加入沙特针对胡塞武装的打击行动，“我们将仔细考虑”。此 <span class="src">[百度]</span></li>
-<li><strong>打了两针都没死的美国女死刑犯出院</strong> — 9月30日，美国田纳西州女死刑犯克丽斯塔·盖尔·派克（Christa Gail Pike）在接受两轮致命药物注射后并未死亡，随后行刑被叫停，她被送医抢救。她的律 <span class="src">[百度]</span></li>
-<li><strong>俄罗斯“鼠疫”疑云</strong> — 10月8日，俄罗斯伊尔库茨克州解除所有防疫措施。据当地中国留学生反映，国人几乎买空药店口罩，但俄罗斯人未戴口罩且公共场所未见防疫，生活如常。 <span class="src">[百度]</span></li>
+<li><strong>胡塞武装的弹道导弹美国能拦截吗</strong> — 胡塞武装的弹道导弹美国能拦截吗 <span class="src">[头条]</span></li>
+<li><strong>挪威学者：乌克兰在军事上已彻底战败</strong> — 挪威学者：乌克兰在军事上已彻底战败 <span class="src">[头条]</span></li>
+<li><strong>泽连斯基回应特朗普说乌需要新总统</strong> — 泽连斯基回应特朗普说乌需要新总统 <span class="src">[头条]</span></li>
+<li><strong>王曼昱说对日本球员只有一点优势了</strong> — 王曼昱说对日本球员只有一点优势了 <span class="src">[头条]</span></li>
+<li><strong>胡塞袭击沙特机场 美国会不会出手</strong> — 胡塞袭击沙特机场 美国会不会出手 <span class="src">[头条]</span></li>
+<li><strong>泽连斯基回应特朗普</strong> — 乌克兰总统泽连斯基11日就美国总统特朗普有关乌克兰换总统的言论回应说，乌克兰选择哪位领导人应由其社会和人民决定。 <span class="src">[百度]</span></li>
 </ol>
 </div>
 <div class="observation">
 <div class="observation-title">今日观察</div>
-<p><strong>AI行业</strong>：今日AI热点关键词：Anthropic 向白宫通报, OpenAI 测试智能体逃逸 , State of AI Rep。热度最高为"Anthropic 向白宫通报 AI 智"。</p><p><strong>国内</strong>：国内热搜关键词：香港近年多位名人骨灰被盗, 迈阿密国际4-0大胜华盛顿联, 泽连斯基与多个欧洲国家领导人通。</p><p><strong>国际</strong>：国际焦点：欧盟为何离不开中国稀土又怕中国, 美国可能加入沙特对胡塞打击行动, 韩国瑜：有一万个理由维护两岸和。</p>
+<p><strong>AI行业</strong>：今日AI热点关键词：GPT-6.1 Sol 在 C。热度最高为"GPT-6.1 Sol 在 Codex "。</p><p><strong>国内</strong>：国内热搜关键词：男子在家晾衣服一套操作看呆网友, 蒙古国草原火情蔓延至我边境, 医生：熬夜就是熬命。</p><p><strong>国际</strong>：国际焦点：胡塞武装的弹道导弹美国能拦截吗, 挪威学者：乌克兰在军事上已彻底, 泽连斯基回应特朗普说乌需要新总。</p>
 </div>`
 },
 training:{
 title:'<span class="icon">📚</span>培训行业日报',
-meta:'<span>2026年10月11日 · 周日</span><span class="badge badge-green">流量Top 20</span>',
+meta:'<span>2026年10月12日 · 周一</span><span class="badge badge-green">流量Top 20</span>',
 html:`<div class="stats-row">
 <div class="stat-card"><div class="stat-num">20</div><div class="stat-label">热门条目</div></div>
 <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">详细卡片</div></div>
@@ -223,40 +213,40 @@ html:`<div class="stats-row">
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">1</span>流量Top 5（详细）</div>
-<div class="card" style="border-left:4px solid #ef4444"><div class="card-title"><span class="rnk">1</span>未来五年我国将推进就业和社保发展</div>
-<div class="card-meta">热度搜索 · 头条 · 10月11日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7694998107796963370/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227694998107796963370%22%2C%22hot_board_impr_id%22%3A%22202610111118355963556611265CF85555%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%9C%AA%E6%9D%A5%E4%BA%94%E5%B9%B4%E6%88%91%E5%9B%BD%E5%B0%86%E6%8E%A8%E8%BF%9B%E5%B0%B1%E4%B8%9A%E5%92%8C%E7%A4%BE%E4%BF%9D%E5%8F%91%E5%B1%95%22%7D&rank=&style_id=40132&topic_id=7694998107796963370" target="_blank">阅读原文 →</a></div>
-<div class="card" style="border-left:4px solid #f59e0b"><div class="card-title"><span class="rnk">2</span>香港近年多位名人骨灰被盗</div>
-<div class="card-meta">热度搜索 · 头条 · 10月11日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7695189494802677769/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227695189494802677769%22%2C%22hot_board_impr_id%22%3A%22202610111118355963556611265CF85555%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%A6%99%E6%B8%AF%E8%BF%91%E5%B9%B4%E5%A4%9A%E4%BD%8D%E5%90%8D%E4%BA%BA%E9%AA%A8%E7%81%B0%E8%A2%AB%E7%9B%97%22%7D&rank=&style_id=40132&topic_id=7695189494802677769" target="_blank">阅读原文 →</a></div>
-<div class="card" style="border-left:4px solid #ef4444"><div class="card-title"><span class="rnk">3</span>迈阿密国际4-0大胜华盛顿联</div>
-<div class="card-meta">热度搜索 · 头条 · 10月11日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7695220880476999210/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227695220880476999210%22%2C%22hot_board_impr_id%22%3A%22202610111118355963556611265CF85555%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%BF%88%E9%98%BF%E5%AF%86%E5%9B%BD%E9%99%854-0%E5%A4%A7%E8%83%9C%E5%8D%8E%E7%9B%9B%E9%A1%BF%E8%81%94%22%7D&rank=&style_id=40132&topic_id=7695220880476999210" target="_blank">阅读原文 →</a></div>
-<div class="card" style="border-left:4px solid #3b82f6"><div class="card-title"><span class="rnk">4</span>泽连斯基与多个欧洲国家领导人通话</div>
-<div class="card-meta">热度搜索 · 头条 · 10月11日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7695127371439128617/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227695127371439128617%22%2C%22hot_board_impr_id%22%3A%22202610111118355963556611265CF85555%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA%E4%B8%8E%E5%A4%9A%E4%B8%AA%E6%AC%A7%E6%B4%B2%E5%9B%BD%E5%AE%B6%E9%A2%86%E5%AF%BC%E4%BA%BA%E9%80%9A%E8%AF%9D%22%7D&rank=&style_id=40132&topic_id=7695127371439128617" target="_blank">阅读原文 →</a></div>
-<div class="card" style="border-left:4px solid #3b82f6"><div class="card-title"><span class="rnk">5</span>刘烨16岁儿子诺一近照曝光</div>
-<div class="card-meta">热度搜索 · 头条 · 10月11日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7694903862139158554/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227694903862139158554%22%2C%22hot_board_impr_id%22%3A%22202610111118355963556611265CF85555%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%88%98%E7%83%A816%E5%B2%81%E5%84%BF%E5%AD%90%E8%AF%BA%E4%B8%80%E8%BF%91%E7%85%A7%E6%9B%9D%E5%85%89%22%7D&rank=&style_id=40132&topic_id=7694903862139158554" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #ef4444"><div class="card-title"><span class="rnk">1</span>男子在家晾衣服一套操作看呆网友</div>
+<div class="card-meta">热度搜索 · 头条 · 10月12日 <span class="card-tag tag-blue">热搜</span></div>
+<a class="card-link" href="https://www.toutiao.com/trending/7695242086773325875/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227695242086773325875%22%2C%22hot_board_impr_id%22%3A%2220261012114142A7AAC6531ABB326C5961%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%94%B7%E5%AD%90%E5%9C%A8%E5%AE%B6%E6%99%BE%E8%A1%A3%E6%9C%8D%E4%B8%80%E5%A5%97%E6%93%8D%E4%BD%9C%E7%9C%8B%E5%91%86%E7%BD%91%E5%8F%8B%22%7D&rank=&style_id=40132&topic_id=7695242086773325875" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #f59e0b"><div class="card-title"><span class="rnk">2</span>蒙古国草原火情蔓延至我边境</div>
+<div class="card-meta">热度搜索 · 头条 · 10月12日 <span class="card-tag tag-blue">热搜</span></div>
+<a class="card-link" href="https://www.toutiao.com/trending/7695358603507384370/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227695358603507384370%22%2C%22hot_board_impr_id%22%3A%2220261012114142A7AAC6531ABB326C5961%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%92%99%E5%8F%A4%E5%9B%BD%E8%8D%89%E5%8E%9F%E7%81%AB%E6%83%85%E8%94%93%E5%BB%B6%E8%87%B3%E6%88%91%E8%BE%B9%E5%A2%83%22%7D&rank=&style_id=40132&topic_id=7695358603507384370" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #ef4444"><div class="card-title"><span class="rnk">3</span>医生：熬夜就是熬命</div>
+<div class="card-meta">热度搜索 · 头条 · 10月12日 <span class="card-tag tag-blue">热搜</span></div>
+<a class="card-link" href="https://www.toutiao.com/trending/7695222054703038483/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227695222054703038483%22%2C%22hot_board_impr_id%22%3A%2220261012114142A7AAC6531ABB326C5961%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%8C%BB%E7%94%9F%EF%BC%9A%E7%86%AC%E5%A4%9C%E5%B0%B1%E6%98%AF%E7%86%AC%E5%91%BD%22%7D&rank=&style_id=40132&topic_id=7695222054703038483" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #3b82f6"><div class="card-title"><span class="rnk">4</span>郑钦文回应夺冠：压力大到呕吐</div>
+<div class="card-meta">热度搜索 · 头条 · 10月12日 <span class="card-tag tag-blue">热搜</span></div>
+<a class="card-link" href="https://www.toutiao.com/trending/7695545620387548699/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227695545620387548699%22%2C%22hot_board_impr_id%22%3A%2220261012114142A7AAC6531ABB326C5961%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%83%91%E9%92%A6%E6%96%87%E5%9B%9E%E5%BA%94%E5%A4%BA%E5%86%A0%EF%BC%9A%E5%8E%8B%E5%8A%9B%E5%A4%A7%E5%88%B0%E5%91%95%E5%90%90%22%7D&rank=&style_id=40132&topic_id=7695545620387548699" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #3b82f6"><div class="card-title"><span class="rnk">5</span>沙特遭遇十年来最惨袭击</div>
+<div class="card-meta">热度搜索 · 头条 · 10月12日 <span class="card-tag tag-blue">热搜</span></div>
+<a class="card-link" href="https://www.toutiao.com/trending/7695408590575636011/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227695408590575636011%22%2C%22hot_board_impr_id%22%3A%2220261012114142A7AAC6531ABB326C5961%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B2%99%E7%89%B9%E9%81%AD%E9%81%87%E5%8D%81%E5%B9%B4%E6%9D%A5%E6%9C%80%E6%83%A8%E8%A2%AD%E5%87%BB%22%7D&rank=&style_id=40132&topic_id=7695408590575636011" target="_blank">阅读原文 →</a></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">2</span>排行榜 6-20</div>
 <ol class="compact-list" start="6">
-<li><strong>柳杰克：台湾就是中国的一个省</strong> <span class="src">[头条]</span></li>
-<li><strong>欧盟为何离不开中国稀土又怕中国汽车</strong> <span class="src">[头条]</span></li>
-<li><strong>社保卡有金卡？北京人社局：诈骗</strong> <span class="src">[头条]</span></li>
-<li><strong>长期这样吃饭全身炎症水平会上升</strong> <span class="src">[头条]</span></li>
-<li><strong>梅艳芳骨灰被盗近3月无线索</strong> <span class="src">[头条]</span></li>
-<li><strong>牛弹琴：泽连斯基最凶险的时刻来了</strong> <span class="src">[头条]</span></li>
-<li><strong>美国可能加入沙特对胡塞打击行动</strong> <span class="src">[头条]</span></li>
-<li><strong>男子河里捞出春秋编钟卖30万获刑5年</strong> <span class="src">[头条]</span></li>
-<li><strong>韩国瑜：有一万个理由维护两岸和平</strong> <span class="src">[头条]</span></li>
-<li><strong>印媒批美国在购买俄石油问题上双标</strong> <span class="src">[头条]</span></li>
-<li><strong>男性衰老时身体或会有4大变化</strong> <span class="src">[头条]</span></li>
-<li><strong>人社部：全面推进“退休预服务”</strong> <span class="src">[头条]</span></li>
-<li><strong>遭袭沙特机场航站楼烟雾弥漫碎片满地</strong> <span class="src">[头条]</span></li>
-<li><strong>维尼修斯拉拽对手头发被红牌罚下</strong> <span class="src">[头条]</span></li>
-<li><strong>王仁君朗诵《七律·长征》</strong> <span class="src">[头条]</span></li>
+<li><strong>尼泊尔再次暴发严重山洪</strong> <span class="src">[头条]</span></li>
+<li><strong>中超无罚分积分榜：蓉城领先国安6分</strong> <span class="src">[头条]</span></li>
+<li><strong>胖东来施工现场干净得像AI</strong> <span class="src">[头条]</span></li>
+<li><strong>解放军位台岛周边演训活动天经地义</strong> <span class="src">[头条]</span></li>
+<li><strong>五胞胎爸爸：尿不湿4个月用4000多片</strong> <span class="src">[头条]</span></li>
+<li><strong>沙特公布利雅得机场遭袭画面</strong> <span class="src">[头条]</span></li>
+<li><strong>霸王茶姬小程序崩了</strong> <span class="src">[头条]</span></li>
+<li><strong>马斯克称泽连斯基太过分了</strong> <span class="src">[头条]</span></li>
+<li><strong>专家：今年暖冬基本确定</strong> <span class="src">[头条]</span></li>
+<li><strong>邓超被问不怕万一只怕什么</strong> <span class="src">[头条]</span></li>
+<li><strong>王曼昱松岛辉空酷姐酷弟夺冠都不笑</strong> <span class="src">[头条]</span></li>
+<li><strong>央视曝投资1.2亿项目仅建5个棚</strong> <span class="src">[头条]</span></li>
+<li><strong>郑钦文首夺中网冠军</strong> <span class="src">[头条]</span></li>
+<li><strong>郑钦文3年商业收入追平李娜整个生涯</strong> <span class="src">[头条]</span></li>
+<li><strong>胡塞武装的弹道导弹美国能拦截吗</strong> <span class="src">[头条]</span></li>
 </ol>
 </div>
 <div class="observation">
@@ -266,7 +256,7 @@ html:`<div class="stats-row">
 },
 education:{
 title:'<span class="icon">🎓</span>教育新闻日报',
-meta:'<span>2026年10月11日 · 周日</span><span class="badge badge-orange">流量Top 20</span>',
+meta:'<span>2026年10月12日 · 周一</span><span class="badge badge-orange">流量Top 20</span>',
 html:`<div class="stats-row">
 <div class="stat-card"><div class="stat-num">20</div><div class="stat-label">热门条目</div></div>
 <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">详细卡片</div></div>
@@ -274,43 +264,44 @@ html:`<div class="stats-row">
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">1</span>流量Top 5（详细）</div>
-<div class="card"><div class="card-title"><span class="rnk">1</span>俄鼠疫疑云下留学生：公共场所没防疫</div>
-<div class="card-meta">头条 · 10月11日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7694201022373167154/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227694201022373167154%22%2C%22hot_board_impr_id%22%3A%22202610111118355963556611265CF85555%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BF%84%E9%BC%A0%E7%96%AB%E7%96%91%E4%BA%91%E4%B8%8B%E7%95%99%E5%AD%A6%E7%94%9F%EF%BC%9A%E5%85%AC%E5%85%B1%E5%9C%BA%E6%89%80%E6%B2%A1%E9%98%B2%E7%96%AB%22%7D&rank=&style_id=40132&topic_id=7694201022373167154" target="_blank">阅读原文 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">2</span>未来五年我国将推进就业和社保发展</div>
-<div class="card-meta">头条 · 10月11日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7694998107796963370/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227694998107796963370%22%2C%22hot_board_impr_id%22%3A%22202610111118355963556611265CF85555%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%9C%AA%E6%9D%A5%E4%BA%94%E5%B9%B4%E6%88%91%E5%9B%BD%E5%B0%86%E6%8E%A8%E8%BF%9B%E5%B0%B1%E4%B8%9A%E5%92%8C%E7%A4%BE%E4%BF%9D%E5%8F%91%E5%B1%95%22%7D&rank=&style_id=40132&topic_id=7694998107796963370" target="_blank">阅读原文 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">3</span>医生两次对五胞胎母亲说希望别后悔</div>
-<div class="card-meta">百度 · 10月11日 <span class="card-tag tag-blue">热搜</span></div>
-<div class="card-summary">2026年2月26日，新疆产妇迪丽在武汉大学中南医院诞下一男四女五胞胎。面对超高危妊娠，医生两次提醒她可能面临的困难，希望她不要后悔。尽管风险巨大，迪丽选择不减胎，坚持生下五个孩子，并表示无论多么辛苦都不后悔。</div>
-<a class="card-link" href="https://www.baidu.com/s?wd=%E5%8C%BB%E7%94%9F%E4%B8%A4%E6%AC%A1%E5%AF%B9%E4%BA%94%E8%83%9E%E8%83%8E%E6%AF%8D%E4%BA%B2%E8%AF%B4%E5%B8%8C%E6%9C%9B%E5%88%AB%E5%90%8E%E6%82%94&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">4</span>11岁成都女孩拿下世界街舞冠军</div>
-<div class="card-meta">百度 · 10月11日 <span class="card-tag tag-blue">热搜</span></div>
-<div class="card-summary">近日，在法国举办的Battle Bad全球街舞总决赛中，成都11岁小学生张昕澜夺得少儿Freestyle项目冠军，成为该赛事创办20年来首位中国少儿冠军。</div>
-<a class="card-link" href="https://www.baidu.com/s?wd=11%E5%B2%81%E6%88%90%E9%83%BD%E5%A5%B3%E5%AD%A9%E6%8B%BF%E4%B8%8B%E4%B8%96%E7%95%8C%E8%A1%97%E8%88%9E%E5%86%A0%E5%86%9B&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">5</span>抗癌药物研发迎来重要突破</div>
-<div class="card-meta">百度 · 10月11日 <span class="card-tag tag-blue">热搜</span></div>
-<div class="card-summary">目前，我国科研团队已启动新药“纳米炭铁”二期临床试验。此前，四川大学华西医院等在医学顶刊公布全球首个铁死亡诱导剂人体一期临床试验结果。该药注入肿瘤能诱导癌细胞“生锈”死亡，18例受试者整体疾病控制率达84.2%。</div>
-<a class="card-link" href="https://www.baidu.com/s?wd=%E6%8A%97%E7%99%8C%E8%8D%AF%E7%89%A9%E7%A0%94%E5%8F%91%E8%BF%8E%E6%9D%A5%E9%87%8D%E8%A6%81%E7%AA%81%E7%A0%B4&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">1</span>大二专科生称靠切片三年赚七百万</div>
+<div class="card-meta">百度 · 10月12日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">近日，“大二专科生称靠切片3年赚700万”上热搜引发网友热议。当事人自述靠逐帧对比爆款视频并批量复制，3年赚700万，坦言成功80%靠平台红利。解读指出，未获授权剪辑主播片段涉嫌侵权，此前已有公司因未经许可使用主播片段被判赔6000元。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E5%A4%A7%E4%BA%8C%E4%B8%93%E7%A7%91%E7%94%9F%E7%A7%B0%E9%9D%A0%E5%88%87%E7%89%87%E4%B8%89%E5%B9%B4%E8%B5%9A%E4%B8%83%E7%99%BE%E4%B8%87&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">2</span>食品安全法大修</div>
+<div class="card-meta">百度 · 10月12日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">食品安全法，要大修了。10日，市场监管总局发布《中华人民共和国食品安全法（修订草案征求意见稿）》，要求中小学、幼儿园食品安全要建立陪餐制度，入网餐饮服务提供者用视频形式，实时向社会公开餐食加工制作过程。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E9%A3%9F%E5%93%81%E5%AE%89%E5%85%A8%E6%B3%95%E5%A4%A7%E4%BF%AE&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">3</span>河南小吃开伦敦首店 一碗胡辣汤87元</div>
+<div class="card-meta">百度 · 10月12日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">当地时间9月26日，河南餐饮品牌方中山胡辣汤在伦敦一区开出首家海外门店，招牌胡辣汤售价约87元人民币。门店坚持“无本土化妥协”，客群以华人留学生为主，此前其海外门店前租客为沙县小吃。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E6%B2%B3%E5%8D%97%E5%B0%8F%E5%90%83%E5%BC%80%E4%BC%A6%E6%95%A6%E9%A6%96%E5%BA%97+%E4%B8%80%E7%A2%97%E8%83%A1%E8%BE%A3%E6%B1%A487%E5%85%83&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">4</span>中方：对比利亚特、丰塞卡采取反制措施</div>
+<div class="card-meta">百度 · 10月12日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">10月12日，外交部网站发布关于对巴拉圭通信和技术部长比利亚特以及伯利兹外交、外贸、教育、文化、科学和技术部长丰塞卡采取反制措施的决定。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E4%B8%AD%E6%96%B9%EF%BC%9A%E5%AF%B9%E6%AF%94%E5%88%A9%E4%BA%9A%E7%89%B9%E3%80%81%E4%B8%B0%E5%A1%9E%E5%8D%A1%E9%87%87%E5%8F%96%E5%8F%8D%E5%88%B6%E6%8E%AA%E6%96%BD&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">5</span>男子在家晾衣服一套操作看呆网友</div>
+<div class="card-meta">头条 · 10月12日 <span class="card-tag tag-blue">热搜</span></div>
+<a class="card-link" href="https://www.toutiao.com/trending/7695242086773325875/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227695242086773325875%22%2C%22hot_board_impr_id%22%3A%2220261012114142A7AAC6531ABB326C5961%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%94%B7%E5%AD%90%E5%9C%A8%E5%AE%B6%E6%99%BE%E8%A1%A3%E6%9C%8D%E4%B8%80%E5%A5%97%E6%93%8D%E4%BD%9C%E7%9C%8B%E5%91%86%E7%BD%91%E5%8F%8B%22%7D&rank=&style_id=40132&topic_id=7695242086773325875" target="_blank">阅读原文 →</a></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">2</span>排行榜 6-20</div>
 <ol class="compact-list" start="6">
-<li><strong>俄罗斯“鼠疫”疑云</strong> — 10月8日，俄罗斯伊尔库茨克州解除所有防疫措施。据当地中国留学生反映，国人几乎买空药店口罩，但俄罗斯人未戴口罩且公共场所 <span class="src">[百度]</span></li>
-<li><strong>16岁高中生骑摩托发生事故致人死亡</strong> — 2022年，重庆16岁高中生张某无证骑摩托车上学，途中与横穿公路的行人相撞，伤者后经抢救无效死亡。事发后，张某拨打120 <span class="src">[百度]</span></li>
-<li><strong>雅思考试取消考生在考场外大哭</strong> — 10月10日，雅思报名热线确认，因技术问题，10日、11日全国雅思考试全部取消，考试费将全额退回，已考口语成绩不予公布。 <span class="src">[百度]</span></li>
-<li><strong>香港近年多位名人骨灰被盗</strong> <span class="src">[头条]</span></li>
-<li><strong>迈阿密国际4-0大胜华盛顿联</strong> <span class="src">[头条]</span></li>
-<li><strong>泽连斯基与多个欧洲国家领导人通话</strong> <span class="src">[头条]</span></li>
-<li><strong>刘烨16岁儿子诺一近照曝光</strong> <span class="src">[头条]</span></li>
-<li><strong>柳杰克：台湾就是中国的一个省</strong> <span class="src">[头条]</span></li>
-<li><strong>欧盟为何离不开中国稀土又怕中国汽车</strong> <span class="src">[头条]</span></li>
-<li><strong>社保卡有金卡？北京人社局：诈骗</strong> <span class="src">[头条]</span></li>
-<li><strong>长期这样吃饭全身炎症水平会上升</strong> <span class="src">[头条]</span></li>
-<li><strong>梅艳芳骨灰被盗近3月无线索</strong> <span class="src">[头条]</span></li>
-<li><strong>牛弹琴：泽连斯基最凶险的时刻来了</strong> <span class="src">[头条]</span></li>
-<li><strong>美国可能加入沙特对胡塞打击行动</strong> <span class="src">[头条]</span></li>
-<li><strong>男子河里捞出春秋编钟卖30万获刑5年</strong> <span class="src">[头条]</span></li>
+<li><strong>蒙古国草原火情蔓延至我边境</strong> <span class="src">[头条]</span></li>
+<li><strong>医生：熬夜就是熬命</strong> <span class="src">[头条]</span></li>
+<li><strong>郑钦文回应夺冠：压力大到呕吐</strong> <span class="src">[头条]</span></li>
+<li><strong>沙特遭遇十年来最惨袭击</strong> <span class="src">[头条]</span></li>
+<li><strong>尼泊尔再次暴发严重山洪</strong> <span class="src">[头条]</span></li>
+<li><strong>中超无罚分积分榜：蓉城领先国安6分</strong> <span class="src">[头条]</span></li>
+<li><strong>胖东来施工现场干净得像AI</strong> <span class="src">[头条]</span></li>
+<li><strong>解放军位台岛周边演训活动天经地义</strong> <span class="src">[头条]</span></li>
+<li><strong>五胞胎爸爸：尿不湿4个月用4000多片</strong> <span class="src">[头条]</span></li>
+<li><strong>沙特公布利雅得机场遭袭画面</strong> <span class="src">[头条]</span></li>
+<li><strong>霸王茶姬小程序崩了</strong> <span class="src">[头条]</span></li>
+<li><strong>马斯克称泽连斯基太过分了</strong> <span class="src">[头条]</span></li>
+<li><strong>专家：今年暖冬基本确定</strong> <span class="src">[头条]</span></li>
+<li><strong>邓超被问不怕万一只怕什么</strong> <span class="src">[头条]</span></li>
+<li><strong>王曼昱松岛辉空酷姐酷弟夺冠都不笑</strong> <span class="src">[头条]</span></li>
 </ol>
 </div>
 <div class="observation">
@@ -320,23 +311,23 @@ html:`<div class="stats-row">
 },
 automation:{
 title:'<span class="icon">⚡</span>办公自动化学习视频',
-meta:'<span>2026年10月11日 · 周日</span><span class="badge badge-orange">播放量Top 20</span>',
+meta:'<span>2026年10月12日 · 周一</span><span class="badge badge-orange">播放量Top 20</span>',
 html:`<div class="stats-row">
 <div class="stat-card"><div class="stat-num">20</div><div class="stat-label">热门视频</div></div>
-<div class="stat-card"><div class="stat-num">1240.7万</div><div class="stat-label">最高播放</div></div>
+<div class="stat-card"><div class="stat-num">1241.1万</div><div class="stat-label">最高播放</div></div>
 <div class="stat-card"><div class="stat-num">B站</div><div class="stat-label">主平台</div></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">1</span>播放量Top 5（详细）</div>
 <div class="card"><div class="card-title"><span class="rnk">1</span>EXCEL教程 | 拜托三连了！全B站最用心（没有之一）的EXCEL免费课程！OFFICE/WPS/表格/EXCEL函数/EXCEL技巧/数据分析/办公软件</div>
-<div class="card-meta">B站 · UP主：别怕Ai · 播放量：1240.7万 <span class="card-tag tag-blue">EXCEL</span><span class="card-tag tag-blue">EXCEL技巧</span></div>
+<div class="card-meta">B站 · UP主：别怕Ai · 播放量：1241.1万 <span class="card-tag tag-blue">EXCEL</span><span class="card-tag tag-blue">EXCEL技巧</span></div>
 <div class="card-summary">B生所学已更新2023年最新AI&PPT新课程：BV1t14y1C7P4 ，教你利用AI提高PPT生产力，真正实现高效办公 
 
 欢迎来到我们的B生所学系列课的第三辑-Excel系列课程；本系列课程是由我们EXCEL老师：若梦老师为大家带来</div>
 <div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:100.0%"></span></span> 100.0%</div>
 <a class="card-link" href="http://www.bilibili.com/video/av547421812" target="_blank">观看视频 →</a></div>
 <div class="card"><div class="card-title"><span class="rnk">2</span>PPT教程 | PPT高手之路，零基础做出高逼格PPT，免费PPT设计制作技巧教学！OFFICE/WPS/演示/幻灯片/PPT模板/keynote/汇报/总结</div>
-<div class="card-meta">B站 · UP主：L叔的播客 · 播放量：1196.8万 <span class="card-tag tag-blue">职场</span><span class="card-tag tag-blue">PPT课程</span></div>
+<div class="card-meta">B站 · UP主：L叔的播客 · 播放量：1197.4万 <span class="card-tag tag-blue">职场</span><span class="card-tag tag-blue">PPT课程</span></div>
 <div class="card-summary">B生所学已更新2023年最新AI&PPT新课程：BV1t14y1C7P4 ，教你利用AI提高PPT生产力，真正实现高效办公
 
 站酷百万人气设计师，演界网“首席”；
@@ -344,7 +335,7 @@ html:`<div class="stats-row">
 <div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:96.5%"></span></span> 96.5%</div>
 <a class="card-link" href="http://www.bilibili.com/video/av840834065" target="_blank">观看视频 →</a></div>
 <div class="card"><div class="card-title"><span class="rnk">3</span>2026必看！全网最新最细最实用Excel零基础入门到精通全套教程！专为零基础小白打造！内容富含Excel表格基础操作、实用函数讲解、项目实战等！</div>
-<div class="card-meta">B站 · UP主：之了学吧 · 播放量：636.6万 <span class="card-tag tag-blue">EXCEL</span><span class="card-tag tag-blue">2023最新</span></div>
+<div class="card-meta">B站 · UP主：之了学吧 · 播放量：637.6万 <span class="card-tag tag-blue">EXCEL</span><span class="card-tag tag-blue">2023最新</span></div>
 <div class="card-summary">搜索公众号【之了学吧】，点击添加助教老师获取视频文档
 
 Word零基础到精通→BV17v4y1j7CY
@@ -355,14 +346,14 @@ VBA零基础到精通→BV1ax4y1V7qi
 
 VBA实战→BV1xx4y1N7mo
 </div>
-<div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:51.3%"></span></span> 51.3%</div>
+<div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:51.4%"></span></span> 51.4%</div>
 <a class="card-link" href="http://www.bilibili.com/video/av737382980" target="_blank">观看视频 →</a></div>
 <div class="card"><div class="card-title"><span class="rnk">4</span>【全套】Word自学教程从小白到高手超详细讲解（Word教程、Word零基础入门起步）</div>
-<div class="card-meta">B站 · UP主：爱知趣教育 · 播放量：630.7万 <span class="card-tag tag-blue">word高效办公</span><span class="card-tag tag-blue">word教程视频全集</span></div>
+<div class="card-meta">B站 · UP主：爱知趣教育 · 播放量：631.1万 <span class="card-tag tag-blue">word高效办公</span><span class="card-tag tag-blue">word教程视频全集</span></div>
 <div class="card-summary">欢迎加入Word学习群：175453351期待你加入
 我们只做精品课
 本套教程对word软件从基础入门到深入应用做了系统性的介绍，包括基本功能的使用，及实际提高的应用，文本的高效选择，图文混排，个人简历的设计，封面的设计等，内容详尽，语言简</div>
-<div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:50.8%"></span></span> 50.8%</div>
+<div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:50.9%"></span></span> 50.9%</div>
 <a class="card-link" href="http://www.bilibili.com/video/av9261220" target="_blank">观看视频 →</a></div>
 <div class="card"><div class="card-title"><span class="rnk">5</span>【2022最新全套】Excel零基础入门进阶到函数，Excel自学教程从小白到高手入门起步超详细实操教程（Excel教程、Excel函数、Excel技巧）</div>
 <div class="card-meta">B站 · UP主：财务大管家 · 播放量：523.9万 <span class="card-tag tag-blue">教育</span><span class="card-tag tag-blue">EXCEL函数</span></div>
@@ -378,18 +369,18 @@ Excel自学教程从小白到高手超详细实操教程</div>
 <tbody>
 <tr><td>6</td><td>【全套】PPT自学教程从小白到高手超详细讲解（PowerPoint教程、PPT零基础入门起步）</td><td>B站</td><td>爱知趣教育</td><td>入门</td><td><a href="http://www.bilibili.com/video/av12053279" target="_blank">观看→</a></td></tr>
 <tr><td>7</td><td>5分钟，教你做个自动化软件拿来办公、刷副本、回微信 | 源码公开，开箱即用</td><td>B站</td><td>不高兴就喝水</td><td>进阶</td><td><a href="http://www.bilibili.com/video/av806829194" target="_blank">观看→</a></td></tr>
-<tr><td>8</td><td>Word教程 | 拜托三连了！全B站最用心（没有之一）的Word免费课程！OFFICE/WPS/办公软件/排版/论文/毕业/文档/行政/打印/标书/报告/方案</td><td>B站</td><td>别怕Ai</td><td>入门</td><td><a href="http://www.bilibili.com/video/av761944292" target="_blank">观看→</a></td></tr>
-<tr><td>9</td><td>【WPS】全套新手自学教程，从零开始超详细讲解</td><td>B站</td><td>WPS学堂</td><td>入门</td><td><a href="http://www.bilibili.com/video/av65469718" target="_blank">观看→</a></td></tr>
-<tr><td>10</td><td>【办公软件实操】Excel、Word自学教程 从小白到高手 零基础入门起步 表格/EXCEL函数/EXCEL技巧/数据分析/办公软件教学</td><td>B站</td><td>职上充电站</td><td>入门</td><td><a href="http://www.bilibili.com/video/av811115813" target="_blank">观看→</a></td></tr>
-<tr><td>11</td><td>【2026最新Codex】Codex保姆级完整教程-Codex新手保姆级教程-最强AI助手！从入门到进阶，22分钟速通Codex！【附教程文档安装包】</td><td>B站</td><td>编程大佬陈悠秀</td><td>进阶</td><td><a href="http://www.bilibili.com/video/av116707129561197" target="_blank">观看→</a></td></tr>
+<tr><td>8</td><td>【WPS】全套新手自学教程，从零开始超详细讲解</td><td>B站</td><td>WPS学堂</td><td>入门</td><td><a href="http://www.bilibili.com/video/av65469718" target="_blank">观看→</a></td></tr>
+<tr><td>9</td><td>Word教程 | 拜托三连了！全B站最用心（没有之一）的Word免费课程！OFFICE/WPS/办公软件/排版/论文/毕业/文档/行政/打印/标书/报告/方案</td><td>B站</td><td>别怕Ai</td><td>入门</td><td><a href="http://www.bilibili.com/video/av761944292" target="_blank">观看→</a></td></tr>
+<tr><td>10</td><td>这不是PPT技术，是PPT魔术吧</td><td>B站</td><td>黑白间设计</td><td>入门</td><td><a href="http://www.bilibili.com/video/av591295216" target="_blank">观看→</a></td></tr>
+<tr><td>11</td><td>【办公软件实操】Excel、Word自学教程 从小白到高手 零基础入门起步 表格/EXCEL函数/EXCEL技巧/数据分析/办公软件教学</td><td>B站</td><td>职上充电站</td><td>入门</td><td><a href="http://www.bilibili.com/video/av811115813" target="_blank">观看→</a></td></tr>
 <tr><td>12</td><td>学12分钟就能做出PPT【ppt简易制作教程】干货全拿走，开店就赚钱</td><td>B站</td><td>呆伯特PPT</td><td>入门</td><td><a href="http://www.bilibili.com/video/av291584001" target="_blank">观看→</a></td></tr>
 <tr><td>13</td><td>【自学WPS教程】2026必看！带你真正掌握WPS办公！全网最新最细最实用WPS零基础入门到精通全套教程！内含Excel基础操作、函数设计、数据透视表等</td><td>B站</td><td>之了学吧</td><td>入门</td><td><a href="http://www.bilibili.com/video/av273997011" target="_blank">观看→</a></td></tr>
 <tr><td>14</td><td>【Office教程】word全套新手自学教程，从零基础到精通</td><td>B站</td><td>大耳朵资源</td><td>入门</td><td><a href="http://www.bilibili.com/video/av628562474" target="_blank">观看→</a></td></tr>
 <tr><td>15</td><td>EXCEL表格的基础操作基础教程，新手入门</td><td>B站</td><td>閑来無事</td><td>入门</td><td><a href="http://www.bilibili.com/video/av544777585" target="_blank">观看→</a></td></tr>
 <tr><td>16</td><td>千锋教育Python全套视频教程，轻松掌握Excel、Word、PPT、邮件、爬虫、office办公自动化（宋如宁主讲）</td><td>B站</td><td>千锋教育</td><td>入门</td><td><a href="http://www.bilibili.com/video/av207647192" target="_blank">观看→</a></td></tr>
-<tr><td>17</td><td>快速掌握Excel的所有功能  【Excel教程】</td><td>B站</td><td>乔治的杰克船长</td><td>入门</td><td><a href="http://www.bilibili.com/video/av853565332" target="_blank">观看→</a></td></tr>
-<tr><td>18</td><td>《零基础学做PPT 》PPT教程，零基础学做PPT</td><td>B站</td><td>哔哩哔哩课堂专栏</td><td>入门</td><td><a href="http://www.bilibili.com/video/av514000850" target="_blank">观看→</a></td></tr>
-<tr><td>19</td><td>史上最易懂，最简单，最快速的Word2016入门教程</td><td>B站</td><td>再往前一步吧</td><td>入门</td><td><a href="http://www.bilibili.com/video/av25617889" target="_blank">观看→</a></td></tr>
+<tr><td>17</td><td>《零基础学做PPT 》PPT教程，零基础学做PPT</td><td>B站</td><td>哔哩哔哩课堂专栏</td><td>入门</td><td><a href="http://www.bilibili.com/video/av514000850" target="_blank">观看→</a></td></tr>
+<tr><td>18</td><td>史上最易懂，最简单，最快速的Word2016入门教程</td><td>B站</td><td>再往前一步吧</td><td>入门</td><td><a href="http://www.bilibili.com/video/av25617889" target="_blank">观看→</a></td></tr>
+<tr><td>19</td><td>计算机一级计算机基础及WPS Office应用 新思路操作题解题视频</td><td>B站</td><td>新思路等考通</td><td>入门</td><td><a href="http://www.bilibili.com/video/av504447132" target="_blank">观看→</a></td></tr>
 <tr><td>20</td><td>【B站强推】2026最新版Excel零基础入门到精通全套教程，覆盖Excel函数 | 数据透视表 | 数据处理 | 数据分析全套课程</td><td>B站</td><td>Max极客菌</td><td>入门</td><td><a href="http://www.bilibili.com/video/av116719125267473" target="_blank">观看→</a></td></tr>
 </tbody>
 </table>
