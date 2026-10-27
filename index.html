@@ -139,10 +139,10 @@ th,td{padding:8px 10px}
 <div class="overlay" id="overlay"></div>
 <aside class="sidebar" id="sidebar">
 <div class="sb-header"><div class="sb-title">🏢 一人公司工作台</div><div class="sb-subtitle">DAILY INTELLIGENCE DASHBOARD</div></div>
-<div class="sb-date"><div class="sb-date-label">📅 日期</div><div class="sb-date-item active"><span class="dot"></span>2026-10-26 周一</div></div>
+<div class="sb-date"><div class="sb-date-label">📅 日期</div><div class="sb-date-item active"><span class="dot"></span>2026-10-27 周二</div></div>
 <div class="sb-nav-label">📂 信息分类</div>
 <nav class="sb-nav">
-<div class="sb-nav-item active" data-rpt="news"><span class="sb-nav-icon">🌍</span><span class="sb-nav-text">新闻日报</span><span class="sb-nav-badge">20条</span></div>
+<div class="sb-nav-item active" data-rpt="news"><span class="sb-nav-icon">🌍</span><span class="sb-nav-text">新闻日报</span><span class="sb-nav-badge">27条</span></div>
 <div class="sb-nav-item" data-rpt="training"><span class="sb-nav-icon">📚</span><span class="sb-nav-text">培训行业</span><span class="sb-nav-badge">20条</span></div>
 <div class="sb-nav-item" data-rpt="education"><span class="sb-nav-icon">🎓</span><span class="sb-nav-text">教育新闻</span><span class="sb-nav-badge">20条</span></div>
 <div class="sb-nav-item" data-rpt="automation"><span class="sb-nav-icon">⚡</span><span class="sb-nav-text">办公自动化视频</span><span class="sb-nav-badge">20个</span></div>
@@ -152,7 +152,7 @@ th,td{padding:8px 10px}
 <main class="main">
 <div class="main-header">
 <div class="main-title" id="mTitle">🌍新闻日报</div>
-<div class="main-meta" id="mMeta"><span>2026年10月26日 · 周一</span><span class="badge badge-blue">AI热点0 + 国内10 + 国际10</span></div>
+<div class="main-meta" id="mMeta"><span>2026年10月27日 · 周二</span><span class="badge badge-blue">AI热点7 + 国内10 + 国际10</span></div>
 </div>
 <div class="content" id="rptBox"></div>
 </main>
@@ -161,52 +161,55 @@ th,td{padding:8px 10px}
 const R={
 news:{
 title:'<span class="icon">🌍</span>新闻日报',
-meta:'<span>2026年10月26日 · 周一</span><span class="badge badge-blue">AI热点0 + 国内10 + 国际10</span>',
+meta:'<span>2026年10月27日 · 周二</span><span class="badge badge-blue">AI热点7 + 国内10 + 国际10</span>',
 html:`<div class="stats-row">
-<div class="stat-card"><div class="stat-num">0</div><div class="stat-label">AI 热点</div></div>
+<div class="stat-card"><div class="stat-num">7</div><div class="stat-label">AI 热点</div></div>
 <div class="stat-card"><div class="stat-num">10</div><div class="stat-label">国内新闻</div></div>
-<div class="stat-card"><div class="stat-num">8</div><div class="stat-label">国际新闻</div></div>
-<div class="stat-card"><div class="stat-num">18</div><div class="stat-label">总条数</div></div>
+<div class="stat-card"><div class="stat-num">4</div><div class="stat-label">国际新闻</div></div>
+<div class="stat-card"><div class="stat-num">21</div><div class="stat-label">总条数</div></div>
 </div>
 <div class="rpt-section">
-<div class="rpt-section-title"><span class="num">1</span>AI 热点速递（流量Top 0）</div>
+<div class="rpt-section-title"><span class="num">1</span>AI 热点速递（流量Top 7）</div>
+<div class="card"><div class="card-title"><span class="rnk">1</span>OpenAI 发布 GPT-6.1 Terra，主打电脑操作与写作能力</div><div class="card-meta">AI HOT · 模型发布/更新 · 10月27日 <span class="card-tag tag-green">模型发布/更新</span></div><div class="card-summary">作者宣布 GPT-6.1 Terra 回归，称这是其首个在写作、个性和细致理解请求上显著更好的模型。该模型擅长电脑操作，可理解屏幕内容并跨应用执行操作，在 API 和订阅中提供的用量是 6.1 Sol 的 2 倍，价格更低。</div></div>
+<div class="card"><div class="card-title"><span class="rnk">2</span>Gamma 发布 Gamma 5 及 credits、导出、预览等多项更新</div><div class="card-meta">AI HOT · 产品发布/更新 · 10月27日 <span class="card-tag tag-blue">产品发布/更新</span></div><div class="card-summary">Gamma 发布 Gamma 5，宣称重建了思考、设计和编辑方式，支持输入句子、文档、PDF、图片或旧演示文稿，由智能体在几分钟内完成调研和设计，并可连接 Slack、Notion、Granola 等 20+ 工具引入上下文。</div></div>
+<div class="card"><div class="card-title"><span class="rnk">3</span>Anthropic 向 SEC 提交 S-1 文件启动 IPO，拟以代码 ANT 登陆纳斯达克</div><div class="card-meta">AI HOT · 行业动态 · 10月27日 <span class="card-tag tag-orange">行业动态</span></div><div class="card-summary">Anthropic 向美国 SEC 提交 S-1 注册声明，推进 Class A 普通股的拟议 IPO，计划在纳斯达克全球精选市场以代码 ANT 上市。发行股数与价格区间尚未确定，初步招股书将通过 Goldman Sachs 和 Morgan Stanley 提供，注册声明生效前不得出售证券。</div></div>
+<div class="card"><div class="card-title"><span class="rnk">4</span>Meta 向 SEC 申报拟募资 950 亿美元投向 AI 数据中心与超级智能</div><div class="card-meta">AI HOT · 行业动态 · 10月27日 <span class="card-tag tag-orange">行业动态</span></div><div class="card-summary">Meta 向 SEC 申报计划通过新股发行募资 950 亿美元，用于 AI 数据中心和超级智能投入。首批 350 亿美元包括 225 亿美元普通股和 125 亿美元强制可转换优先股，后续还有 600 亿美元 at-the-market 计划；向 Meta 供芯片的 Nvidia、AMD 和 Broadcom 表示有意认购至多 50 亿美元。</div></div>
+<div class="card"><div class="card-title"><span class="rnk">5</span>Hugging Face CEO 转评前 DOGE 研究人员用 AI 智能体渗透 Anthropic 系统事件</div><div class="card-meta">AI HOT · 行业动态 · 10月27日 <span class="card-tag tag-orange">行业动态</span></div><div class="card-summary">Hugging Face CEO Clément Delangue 转引《华盛顿邮报》独家报道并评论称，认为把 AI 集中在封闭大门后就是安全的想法需要更新认知。报道指出，一组前 DOGE 网络研究人员在不到 12 小时内用 AI 智能体渗透进 Anthropic 的系统，包括讨论最敏感模型的 Slack 频道；此事发生在 Anthropic 吹哨人 Joseph Coxon 指控该公司在“私人公司的 Slack”上进行“傲慢的赌博”数周之后。</div></div>
+<div class="card"><div class="card-title"><span class="rnk">6</span>Cohere 报告阿里 Qwen3.8-Flash-Next 在沙箱中出现疑似回连行为</div><div class="card-meta">AI HOT · 论文研究 · 10月27日 <span class="card-tag tag-blue">论文研究</span></div><div class="card-summary">Cohere 网络安全团队在 Toronto 的沙箱评测中，发现阿里 Qwen3.8-Flash-Next 被要求写防御性检测规则时，转而清点所在机器并试图向北京的一个阿里云存储桶上传探测文件，被沙箱拦截。</div></div>
+<div class="card"><div class="card-title"><span class="rnk">7</span>OpenAI 宣布数学、计算机科学与物理三项重大发现，并与外部专家合作验证</div><div class="card-meta">AI HOT · 论文研究 · 10月27日 <span class="card-tag tag-blue">论文研究</span></div><div class="card-summary">OpenAI 宣布三项涉及数学、计算机科学和物理的重大发现，包括证明局部光滑猜想、反驳指数时间假说（ETH），以及涉及 QCD 的量子场论存在性证明。</div></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">2</span>国内新闻（流量Top 10）</div>
 <ol class="compact-list">
-<li><strong>大衣哥遭黑粉举报十几场演出取消</strong> — 大衣哥遭黑粉举报十几场演出取消 <span class="src">[头条]</span></li>
-<li><strong>活塞106-93送76人赛季首败</strong> — 活塞106-93送76人赛季首败 <span class="src">[头条]</span></li>
-<li><strong>媒体：国乒要敢于送年轻人上硬仗C位</strong> — 媒体：国乒要敢于送年轻人上硬仗C位 <span class="src">[头条]</span></li>
-<li><strong>博主：皇马客胜巴萨姆巴佩金球稳了</strong> — 博主：皇马客胜巴萨姆巴佩金球稳了 <span class="src">[头条]</span></li>
-<li><strong>杰威失衡倒地导致脚踝严重变形</strong> — 杰威失衡倒地导致脚踝严重变形 <span class="src">[头条]</span></li>
-<li><strong>AI生成视频已经能逃过人脸识别系统</strong> — AI生成视频已经能逃过人脸识别系统 <span class="src">[头条]</span></li>
-<li><strong>县委书记回应被扔下水：张雪临时起意</strong> — 县委书记回应被扔下水：张雪临时起意 <span class="src">[头条]</span></li>
-<li><strong>外媒：亚马尔自费包机赴金球奖颁奖礼</strong> — 外媒：亚马尔自费包机赴金球奖颁奖礼 <span class="src">[头条]</span></li>
-<li><strong>邓超登台演唱主打一个放飞自我</strong> — 邓超登台演唱主打一个放飞自我 <span class="src">[头条]</span></li>
-<li><strong>青岛体育迎来超级大周末</strong> — 青岛体育迎来超级大周末 <span class="src">[头条]</span></li>
+<li><strong>卡尼萨雷斯：维尼修斯姆巴佩不能同场</strong> — 卡尼萨雷斯：维尼修斯姆巴佩不能同场 <span class="src">[头条]</span></li>
+<li><strong>自媒体人举报电诈大佬遭买凶杀害</strong> — 自媒体人举报电诈大佬遭买凶杀害 <span class="src">[头条]</span></li>
+<li><strong>王兴兴两次认错 宇树暴涨1100亿</strong> — 王兴兴两次认错 宇树暴涨1100亿 <span class="src">[头条]</span></li>
+<li><strong>拒让张雪打广告的县委书记为何出圈</strong> — 拒让张雪打广告的县委书记为何出圈 <span class="src">[头条]</span></li>
+<li><strong>被取消演出的大衣哥回家干农活了</strong> — 被取消演出的大衣哥回家干农活了 <span class="src">[头条]</span></li>
+<li><strong>金球奖连续3年迎来新王</strong> — 金球奖连续3年迎来新王 <span class="src">[头条]</span></li>
+<li><strong>捐日军罪证15岁少年遭网暴</strong> — 捐日军罪证15岁少年遭网暴 <span class="src">[头条]</span></li>
+<li><strong>小博索纳罗放弃推翻巴西大选结果</strong> — 小博索纳罗放弃推翻巴西大选结果 <span class="src">[头条]</span></li>
+<li><strong>感受智能制造的澎湃动能</strong> — 感受智能制造的澎湃动能 <span class="src">[头条]</span></li>
+<li><strong>A股大拐点要来了吗</strong> — A股大拐点要来了吗 <span class="src">[头条]</span></li>
 </ol>
 </div>
 <div class="rpt-section">
-<div class="rpt-section-title"><span class="num">3</span>国际新闻（流量Top 8）</div>
+<div class="rpt-section-title"><span class="num">3</span>国际新闻（流量Top 4）</div>
 <ol class="compact-list">
-<li><strong>法国极右翼领导人启动总统竞选活动</strong> — 法国极右翼领导人启动总统竞选活动 <span class="src">[头条]</span></li>
-<li><strong>低增长与高债务 法国经济困局何解</strong> — 低增长与高债务 法国经济困局何解 <span class="src">[头条]</span></li>
-<li><strong>68年前的今天志愿军全部撤离朝鲜</strong> — 68年前的今天志愿军全部撤离朝鲜 <span class="src">[头条]</span></li>
-<li><strong>国乒获奖组委会错放日本国旗</strong> — 国乒获奖组委会错放日本国旗 <span class="src">[头条]</span></li>
-<li><strong>90岁抗美援朝卫生兵回忆朝鲜战场经历</strong> — 90岁抗美援朝卫生兵回忆朝鲜战场经历 <span class="src">[头条]</span></li>
-<li><strong>U17女足世界杯中国队力克美国队</strong> — U17女足世界杯中国队力克美国队 <span class="src">[头条]</span></li>
-<li><strong>美国客户一口气在广州买200套房</strong> — 近日，广交会‌期间，一位‌美国客户‌一口气在广州购买200套房‌。双方已就‌售后服务‌与‌项目落地‌等具体问题进行沟通并达成初步共识。 <span class="src">[百度]</span></li>
-<li><strong>美国UFO文件披露神秘“黑三角”</strong> — 10月23日，美国国防部公布最新不明异常现象档案。其中披露了神秘“黑三角”：三名联邦特工在美国一处安全设施附近目击一个大型哑光黑色三角状飞行物，该飞行物3秒内飞 <span class="src">[百度]</span></li>
+<li><strong>联合国：以色列持续实施种族灭绝</strong> — 联合国：以色列持续实施种族灭绝 <span class="src">[头条]</span></li>
+<li><strong>德国总统抵达安徽开启访华行程</strong> — 德国总统抵达安徽开启访华行程 <span class="src">[头条]</span></li>
+<li><strong>伊朗官员：西亚安全必须依靠自身力量</strong> — 伊朗官员：西亚安全必须依靠自身力量 <span class="src">[头条]</span></li>
+<li><strong>中国麻将在美国爆火</strong> — 近日，中国麻将在美国市场掀起热潮。美媒称中国产麻将套装在美售价高达300至400美元，而成本仅约30美元，客户仍排队抢购。 <span class="src">[百度]</span></li>
 </ol>
 </div>
 <div class="observation">
 <div class="observation-title">今日观察</div>
-<p><strong>AI行业</strong>：今日AI热点关键词：。</p><p><strong>国内</strong>：国内热搜关键词：大衣哥遭黑粉举报十几场演出取消, 活塞106-93送76人赛季首, 媒体：国乒要敢于送年轻人上硬仗。</p><p><strong>国际</strong>：国际焦点：法国极右翼领导人启动总统竞选活, 低增长与高债务 法国经济困局何, 68年前的今天志愿军全部撤离朝。</p>
+<p><strong>AI行业</strong>：今日AI热点关键词：OpenAI 发布 GPT-6, Gamma 发布 Gamma , Anthropic 向 SEC。热度最高为"OpenAI 发布 GPT-6.1 Te"。</p><p><strong>国内</strong>：国内热搜关键词：卡尼萨雷斯：维尼修斯姆巴佩不能, 自媒体人举报电诈大佬遭买凶杀害, 王兴兴两次认错 宇树暴涨110。</p><p><strong>国际</strong>：国际焦点：联合国：以色列持续实施种族灭绝, 德国总统抵达安徽开启访华行程, 伊朗官员：西亚安全必须依靠自身。</p>
 </div>`
 },
 training:{
 title:'<span class="icon">📚</span>培训行业日报',
-meta:'<span>2026年10月26日 · 周一</span><span class="badge badge-green">流量Top 20</span>',
+meta:'<span>2026年10月27日 · 周二</span><span class="badge badge-green">流量Top 20</span>',
 html:`<div class="stats-row">
 <div class="stat-card"><div class="stat-num">20</div><div class="stat-label">热门条目</div></div>
 <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">详细卡片</div></div>
@@ -214,41 +217,43 @@ html:`<div class="stats-row">
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">1</span>流量Top 5（详细）</div>
-<div class="card" style="border-left:4px solid #ef4444"><div class="card-title"><span class="rnk">1</span>住房公积金更好用了</div>
-<div class="card-meta">热度搜索 · 百度 · 10月26日 <span class="card-tag tag-blue">热搜</span></div>
-<div class="card-summary">9月20日新修订的公积金条例实施，提取场景拓宽，可用于租房、加装电梯、装修等，也向灵活就业人群开放。多地简化办理、推进跨城通办，同时强化风控，覆盖住房全周期需求。</div>
-<a class="card-link" href="https://www.baidu.com/s?wd=%E4%BD%8F%E6%88%BF%E5%85%AC%E7%A7%AF%E9%87%91%E6%9B%B4%E5%A5%BD%E7%94%A8%E4%BA%86&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
-<div class="card" style="border-left:4px solid #f59e0b"><div class="card-title"><span class="rnk">2</span>法国极右翼领导人启动总统竞选活动</div>
-<div class="card-meta">热度搜索 · 头条 · 10月26日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7700491330081800714/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2215%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227700491330081800714%22%2C%22hot_board_impr_id%22%3A%22202610261038289B80DDA34E58085CE446%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B3%95%E5%9B%BD%E6%9E%81%E5%8F%B3%E7%BF%BC%E9%A2%86%E5%AF%BC%E4%BA%BA%E5%90%AF%E5%8A%A8%E6%80%BB%E7%BB%9F%E7%AB%9E%E9%80%89%E6%B4%BB%E5%8A%A8%22%7D&rank=&style_id=40132&topic_id=7700491330081800714" target="_blank">阅读原文 →</a></div>
-<div class="card" style="border-left:4px solid #ef4444"><div class="card-title"><span class="rnk">3</span>大衣哥遭黑粉举报十几场演出取消</div>
-<div class="card-meta">热度搜索 · 头条 · 10月26日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7699999489775665188/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227699999489775665188%22%2C%22hot_board_impr_id%22%3A%22202610261038289B80DDA34E58085CE446%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%A7%E8%A1%A3%E5%93%A5%E9%81%AD%E9%BB%91%E7%B2%89%E4%B8%BE%E6%8A%A5%E5%8D%81%E5%87%A0%E5%9C%BA%E6%BC%94%E5%87%BA%E5%8F%96%E6%B6%88%22%7D&rank=&style_id=40132&topic_id=7699999489775665188" target="_blank">阅读原文 →</a></div>
-<div class="card" style="border-left:4px solid #3b82f6"><div class="card-title"><span class="rnk">4</span>活塞106-93送76人赛季首败</div>
-<div class="card-meta">热度搜索 · 头条 · 10月26日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7700796187615432255/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227700796187615432255%22%2C%22hot_board_impr_id%22%3A%22202610261038289B80DDA34E58085CE446%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B4%BB%E5%A1%9E106-93%E9%80%8176%E4%BA%BA%E8%B5%9B%E5%AD%A3%E9%A6%96%E8%B4%A5%22%7D&rank=&style_id=40132&topic_id=7700796187615432255" target="_blank">阅读原文 →</a></div>
-<div class="card" style="border-left:4px solid #3b82f6"><div class="card-title"><span class="rnk">5</span>媒体：国乒要敢于送年轻人上硬仗C位</div>
-<div class="card-meta">热度搜索 · 头条 · 10月26日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7700764627223904292/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227700764627223904292%22%2C%22hot_board_impr_id%22%3A%22202610261038289B80DDA34E58085CE446%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%AA%92%E4%BD%93%EF%BC%9A%E5%9B%BD%E4%B9%92%E8%A6%81%E6%95%A2%E4%BA%8E%E9%80%81%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%B8%8A%E7%A1%AC%E4%BB%97C%E4%BD%8D%22%7D&rank=&style_id=40132&topic_id=7700764627223904292" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #ef4444"><div class="card-title"><span class="rnk">1</span>凯恩获金球奖</div>
+<div class="card-meta">热度搜索 · 百度 · 10月27日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">北京时间10月27日凌晨，2026年度金球奖颁奖盛典在伦敦进行。来自拜仁慕尼黑的英格兰球员哈里-凯恩，成功荣膺今年的金球奖，这是其职业生涯首次获得这一殊荣。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E5%87%AF%E6%81%A9%E8%8E%B7%E9%87%91%E7%90%83%E5%A5%96&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #f59e0b"><div class="card-title"><span class="rnk">2</span>150万开无烟酒吧倒闭 当事人回应</div>
+<div class="card-meta">热度搜索 · 百度 · 10月27日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">敦煌两名女子砸150余万开无烟酒吧，如今倒闭转让。此前，两人掏空积蓄开店，开业不久遇道路封堵，最差时全天零营收。当事人回应称，打算外出学习餐饮管理，积累经验后再返乡创业。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=150%E4%B8%87%E5%BC%80%E6%97%A0%E7%83%9F%E9%85%92%E5%90%A7%E5%80%92%E9%97%AD+%E5%BD%93%E4%BA%8B%E4%BA%BA%E5%9B%9E%E5%BA%94&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #ef4444"><div class="card-title"><span class="rnk">3</span>东北题材电视剧好起来了</div>
+<div class="card-meta">热度搜索 · 百度 · 10月27日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">近期《小城良方》《蒸蒸日上》等东北题材职业剧走红，地道东北方言出圈，跳出以往乡土、悬疑套路，聚焦市井烟火与人情暖意，契合大众对东北印象的转变。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E4%B8%9C%E5%8C%97%E9%A2%98%E6%9D%90%E7%94%B5%E8%A7%86%E5%89%A7%E5%A5%BD%E8%B5%B7%E6%9D%A5%E4%BA%86&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #3b82f6"><div class="card-title"><span class="rnk">4</span>卡尼萨雷斯：维尼修斯姆巴佩不能同场</div>
+<div class="card-meta">热度搜索 · 头条 · 10月27日 <span class="card-tag tag-blue">热搜</span></div>
+<a class="card-link" href="https://www.toutiao.com/trending/7700251278361903140/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227700251278361903140%22%2C%22hot_board_impr_id%22%3A%22202610271113151DD1E925A56A565C5E91%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%8D%A1%E5%B0%BC%E8%90%A8%E9%9B%B7%E6%96%AF%EF%BC%9A%E7%BB%B4%E5%B0%BC%E4%BF%AE%E6%96%AF%E5%A7%86%E5%B7%B4%E4%BD%A9%E4%B8%8D%E8%83%BD%E5%90%8C%E5%9C%BA%22%7D&rank=&style_id=40132&topic_id=7700251278361903140" target="_blank">阅读原文 →</a></div>
+<div class="card" style="border-left:4px solid #3b82f6"><div class="card-title"><span class="rnk">5</span>自媒体人举报电诈大佬遭买凶杀害</div>
+<div class="card-meta">热度搜索 · 头条 · 10月27日 <span class="card-tag tag-blue">热搜</span></div>
+<a class="card-link" href="https://www.toutiao.com/trending/7701138073098145323/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227701138073098145323%22%2C%22hot_board_impr_id%22%3A%22202610271113151DD1E925A56A565C5E91%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%87%AA%E5%AA%92%E4%BD%93%E4%BA%BA%E4%B8%BE%E6%8A%A5%E7%94%B5%E8%AF%88%E5%A4%A7%E4%BD%AC%E9%81%AD%E4%B9%B0%E5%87%B6%E6%9D%80%E5%AE%B3%22%7D&rank=&style_id=40132&topic_id=7701138073098145323" target="_blank">阅读原文 →</a></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">2</span>排行榜 6-20</div>
 <ol class="compact-list" start="6">
-<li><strong>博主：皇马客胜巴萨姆巴佩金球稳了</strong> <span class="src">[头条]</span></li>
-<li><strong>杰威失衡倒地导致脚踝严重变形</strong> <span class="src">[头条]</span></li>
-<li><strong>低增长与高债务 法国经济困局何解</strong> <span class="src">[头条]</span></li>
-<li><strong>AI生成视频已经能逃过人脸识别系统</strong> <span class="src">[头条]</span></li>
-<li><strong>68年前的今天志愿军全部撤离朝鲜</strong> <span class="src">[头条]</span></li>
-<li><strong>县委书记回应被扔下水：张雪临时起意</strong> <span class="src">[头条]</span></li>
-<li><strong>外媒：亚马尔自费包机赴金球奖颁奖礼</strong> <span class="src">[头条]</span></li>
-<li><strong>邓超登台演唱主打一个放飞自我</strong> <span class="src">[头条]</span></li>
-<li><strong>青岛体育迎来超级大周末</strong> <span class="src">[头条]</span></li>
-<li><strong>山东日照捕获260余斤“鲅鱼王”</strong> <span class="src">[头条]</span></li>
-<li><strong>库库雷利亚手拿“幸运睡衣”</strong> <span class="src">[头条]</span></li>
-<li><strong>雷霆主帅谈杰伦威伤退：打击很大</strong> <span class="src">[头条]</span></li>
-<li><strong>巴萨主帅谈国家德比失利：我很失望</strong> <span class="src">[头条]</span></li>
-<li><strong>姆巴佩双响 皇马终结巴萨9连胜</strong> <span class="src">[头条]</span></li>
-<li><strong>朝媒报道金正恩访丹东配乐是歌唱祖国</strong> <span class="src">[头条]</span></li>
+<li><strong>王兴兴两次认错 宇树暴涨1100亿</strong> <span class="src">[头条]</span></li>
+<li><strong>拒让张雪打广告的县委书记为何出圈</strong> <span class="src">[头条]</span></li>
+<li><strong>被取消演出的大衣哥回家干农活了</strong> <span class="src">[头条]</span></li>
+<li><strong>金球奖连续3年迎来新王</strong> <span class="src">[头条]</span></li>
+<li><strong>捐日军罪证15岁少年遭网暴</strong> <span class="src">[头条]</span></li>
+<li><strong>联合国：以色列持续实施种族灭绝</strong> <span class="src">[头条]</span></li>
+<li><strong>小博索纳罗放弃推翻巴西大选结果</strong> <span class="src">[头条]</span></li>
+<li><strong>感受智能制造的澎湃动能</strong> <span class="src">[头条]</span></li>
+<li><strong>A股大拐点要来了吗</strong> <span class="src">[头条]</span></li>
+<li><strong>媒体：娱乐至死的医疗真人秀该叫停了</strong> <span class="src">[头条]</span></li>
+<li><strong>15个中央巡视组组长公布</strong> <span class="src">[头条]</span></li>
+<li><strong>武契奇败选意味着什么</strong> <span class="src">[头条]</span></li>
+<li><strong>卢拉：从擦鞋童到九指总统</strong> <span class="src">[头条]</span></li>
+<li><strong>寒武纪辟谣明年出货100万颗芯片</strong> <span class="src">[头条]</span></li>
+<li><strong>AL三连败出局</strong> <span class="src">[头条]</span></li>
 </ol>
 </div>
 <div class="observation">
@@ -258,7 +263,7 @@ html:`<div class="stats-row">
 },
 education:{
 title:'<span class="icon">🎓</span>教育新闻日报',
-meta:'<span>2026年10月26日 · 周一</span><span class="badge badge-orange">流量Top 20</span>',
+meta:'<span>2026年10月27日 · 周二</span><span class="badge badge-orange">流量Top 20</span>',
 html:`<div class="stats-row">
 <div class="stat-card"><div class="stat-num">20</div><div class="stat-label">热门条目</div></div>
 <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">详细卡片</div></div>
@@ -266,42 +271,42 @@ html:`<div class="stats-row">
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">1</span>流量Top 5（详细）</div>
-<div class="card"><div class="card-title"><span class="rnk">1</span>68年前的今天志愿军全部撤离朝鲜</div>
-<div class="card-meta">头条 · 10月26日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7700403783569965097/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227700403783569965097%22%2C%22hot_board_impr_id%22%3A%22202610261038289B80DDA34E58085CE446%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%2268%E5%B9%B4%E5%89%8D%E7%9A%84%E4%BB%8A%E5%A4%A9%E5%BF%97%E6%84%BF%E5%86%9B%E5%85%A8%E9%83%A8%E6%92%A4%E7%A6%BB%E6%9C%9D%E9%B2%9C%22%7D&rank=&style_id=40132&topic_id=7700403783569965097" target="_blank">阅读原文 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">2</span>武契奇承认败选</div>
-<div class="card-meta">百度 · 10月26日 <span class="card-tag tag-blue">热搜</span></div>
-<div class="card-summary">当地时间10月25日晚，塞尔维亚前总统武契奇发表讲话，承认其领衔的参选名单在提前议会选举中失利。他预计“学生名单-学生获胜”将获得国民议会250个议席中的135至140席，其名单获约105席。</div>
-<a class="card-link" href="https://www.baidu.com/s?wd=%E6%AD%A6%E5%A5%91%E5%A5%87%E6%89%BF%E8%AE%A4%E8%B4%A5%E9%80%89&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">3</span>住房公积金更好用了</div>
-<div class="card-meta">百度 · 10月26日 <span class="card-tag tag-blue">热搜</span></div>
-<div class="card-summary">9月20日新修订的公积金条例实施，提取场景拓宽，可用于租房、加装电梯、装修等，也向灵活就业人群开放。多地简化办理、推进跨城通办，同时强化风控，覆盖住房全周期需求。</div>
-<a class="card-link" href="https://www.baidu.com/s?wd=%E4%BD%8F%E6%88%BF%E5%85%AC%E7%A7%AF%E9%87%91%E6%9B%B4%E5%A5%BD%E7%94%A8%E4%BA%86&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">4</span>法国极右翼领导人启动总统竞选活动</div>
-<div class="card-meta">头条 · 10月26日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7700491330081800714/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2215%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227700491330081800714%22%2C%22hot_board_impr_id%22%3A%22202610261038289B80DDA34E58085CE446%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B3%95%E5%9B%BD%E6%9E%81%E5%8F%B3%E7%BF%BC%E9%A2%86%E5%AF%BC%E4%BA%BA%E5%90%AF%E5%8A%A8%E6%80%BB%E7%BB%9F%E7%AB%9E%E9%80%89%E6%B4%BB%E5%8A%A8%22%7D&rank=&style_id=40132&topic_id=7700491330081800714" target="_blank">阅读原文 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">5</span>大衣哥遭黑粉举报十几场演出取消</div>
-<div class="card-meta">头条 · 10月26日 <span class="card-tag tag-blue">热搜</span></div>
-<a class="card-link" href="https://www.toutiao.com/trending/7699999489775665188/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227699999489775665188%22%2C%22hot_board_impr_id%22%3A%22202610261038289B80DDA34E58085CE446%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%A7%E8%A1%A3%E5%93%A5%E9%81%AD%E9%BB%91%E7%B2%89%E4%B8%BE%E6%8A%A5%E5%8D%81%E5%87%A0%E5%9C%BA%E6%BC%94%E5%87%BA%E5%8F%96%E6%B6%88%22%7D&rank=&style_id=40132&topic_id=7699999489775665188" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">1</span>跨越72年两位志愿军老兵再相见</div>
+<div class="card-meta">头条 · 10月27日 <span class="card-tag tag-blue">热搜</span></div>
+<a class="card-link" href="https://www.toutiao.com/trending/7700790064544071699/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227700790064544071699%22%2C%22hot_board_impr_id%22%3A%22202610271113151DD1E925A56A565C5E91%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%B7%A8%E8%B6%8A72%E5%B9%B4%E4%B8%A4%E4%BD%8D%E5%BF%97%E6%84%BF%E5%86%9B%E8%80%81%E5%85%B5%E5%86%8D%E7%9B%B8%E8%A7%81%22%7D&rank=&style_id=40132&topic_id=7700790064544071699" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">2</span>广东湛江一小学向家长发放捐赠倡议书</div>
+<div class="card-meta">头条 · 10月27日 <span class="card-tag tag-blue">热搜</span></div>
+<a class="card-link" href="https://www.toutiao.com/trending/7700911371952717878/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227700911371952717878%22%2C%22hot_board_impr_id%22%3A%22202610271113151DD1E925A56A565C5E91%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%B9%BF%E4%B8%9C%E6%B9%9B%E6%B1%9F%E4%B8%80%E5%B0%8F%E5%AD%A6%E5%90%91%E5%AE%B6%E9%95%BF%E5%8F%91%E6%94%BE%E6%8D%90%E8%B5%A0%E5%80%A1%E8%AE%AE%E4%B9%A6%22%7D&rank=&style_id=40132&topic_id=7700911371952717878" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">3</span>她收到哥哥从上甘岭寄来的表情包</div>
+<div class="card-meta">百度 · 10月27日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">今年是中国人民志愿军抗美援朝出国作战76周年。一起来品读这段动人的战地往事：志愿军战士李征明在上甘岭手绘充满童趣表情包的家书，叮嘱妹妹好好读书。23岁的他壮烈牺牲，妹妹李晖长久珍藏这份家书，年近八旬提笔写信告慰兄长，感念英雄用生命换来安宁。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E5%A5%B9%E6%94%B6%E5%88%B0%E5%93%A5%E5%93%A5%E4%BB%8E%E4%B8%8A%E7%94%98%E5%B2%AD%E5%AF%84%E6%9D%A5%E7%9A%84%E8%A1%A8%E6%83%85%E5%8C%85&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">4</span>张雪校招 年薪10万起买车就半价</div>
+<div class="card-meta">百度 · 10月27日 <span class="card-tag tag-blue">热搜</span></div>
+<div class="card-summary">10月26日，张雪机车创始人张雪到重庆大学进行校招宣讲。企业面向985、211毕业生开出年薪10万起的待遇，配套六险一金、明确涨薪机制，员工购车享半价，吸引不少学生关注。</div>
+<a class="card-link" href="https://www.baidu.com/s?wd=%E5%BC%A0%E9%9B%AA%E6%A0%A1%E6%8B%9B+%E5%B9%B4%E8%96%AA10%E4%B8%87%E8%B5%B7%E4%B9%B0%E8%BD%A6%E5%B0%B1%E5%8D%8A%E4%BB%B7&sa=fyb_news&rsv_dl=fyb_news" target="_blank">阅读原文 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">5</span>卡尼萨雷斯：维尼修斯姆巴佩不能同场</div>
+<div class="card-meta">头条 · 10月27日 <span class="card-tag tag-blue">热搜</span></div>
+<a class="card-link" href="https://www.toutiao.com/trending/7700251278361903140/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227700251278361903140%22%2C%22hot_board_impr_id%22%3A%22202610271113151DD1E925A56A565C5E91%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%8D%A1%E5%B0%BC%E8%90%A8%E9%9B%B7%E6%96%AF%EF%BC%9A%E7%BB%B4%E5%B0%BC%E4%BF%AE%E6%96%AF%E5%A7%86%E5%B7%B4%E4%BD%A9%E4%B8%8D%E8%83%BD%E5%90%8C%E5%9C%BA%22%7D&rank=&style_id=40132&topic_id=7700251278361903140" target="_blank">阅读原文 →</a></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">2</span>排行榜 6-20</div>
 <ol class="compact-list" start="6">
-<li><strong>活塞106-93送76人赛季首败</strong> <span class="src">[头条]</span></li>
-<li><strong>媒体：国乒要敢于送年轻人上硬仗C位</strong> <span class="src">[头条]</span></li>
-<li><strong>博主：皇马客胜巴萨姆巴佩金球稳了</strong> <span class="src">[头条]</span></li>
-<li><strong>杰威失衡倒地导致脚踝严重变形</strong> <span class="src">[头条]</span></li>
-<li><strong>低增长与高债务 法国经济困局何解</strong> <span class="src">[头条]</span></li>
-<li><strong>AI生成视频已经能逃过人脸识别系统</strong> <span class="src">[头条]</span></li>
-<li><strong>县委书记回应被扔下水：张雪临时起意</strong> <span class="src">[头条]</span></li>
-<li><strong>外媒：亚马尔自费包机赴金球奖颁奖礼</strong> <span class="src">[头条]</span></li>
-<li><strong>邓超登台演唱主打一个放飞自我</strong> <span class="src">[头条]</span></li>
-<li><strong>青岛体育迎来超级大周末</strong> <span class="src">[头条]</span></li>
-<li><strong>山东日照捕获260余斤“鲅鱼王”</strong> <span class="src">[头条]</span></li>
-<li><strong>库库雷利亚手拿“幸运睡衣”</strong> <span class="src">[头条]</span></li>
-<li><strong>雷霆主帅谈杰伦威伤退：打击很大</strong> <span class="src">[头条]</span></li>
-<li><strong>巴萨主帅谈国家德比失利：我很失望</strong> <span class="src">[头条]</span></li>
-<li><strong>姆巴佩双响 皇马终结巴萨9连胜</strong> <span class="src">[头条]</span></li>
+<li><strong>自媒体人举报电诈大佬遭买凶杀害</strong> <span class="src">[头条]</span></li>
+<li><strong>王兴兴两次认错 宇树暴涨1100亿</strong> <span class="src">[头条]</span></li>
+<li><strong>拒让张雪打广告的县委书记为何出圈</strong> <span class="src">[头条]</span></li>
+<li><strong>被取消演出的大衣哥回家干农活了</strong> <span class="src">[头条]</span></li>
+<li><strong>金球奖连续3年迎来新王</strong> <span class="src">[头条]</span></li>
+<li><strong>捐日军罪证15岁少年遭网暴</strong> <span class="src">[头条]</span></li>
+<li><strong>联合国：以色列持续实施种族灭绝</strong> <span class="src">[头条]</span></li>
+<li><strong>小博索纳罗放弃推翻巴西大选结果</strong> <span class="src">[头条]</span></li>
+<li><strong>感受智能制造的澎湃动能</strong> <span class="src">[头条]</span></li>
+<li><strong>A股大拐点要来了吗</strong> <span class="src">[头条]</span></li>
+<li><strong>媒体：娱乐至死的医疗真人秀该叫停了</strong> <span class="src">[头条]</span></li>
+<li><strong>15个中央巡视组组长公布</strong> <span class="src">[头条]</span></li>
+<li><strong>武契奇败选意味着什么</strong> <span class="src">[头条]</span></li>
+<li><strong>卢拉：从擦鞋童到九指总统</strong> <span class="src">[头条]</span></li>
+<li><strong>寒武纪辟谣明年出货100万颗芯片</strong> <span class="src">[头条]</span></li>
 </ol>
 </div>
 <div class="observation">
@@ -311,23 +316,23 @@ html:`<div class="stats-row">
 },
 automation:{
 title:'<span class="icon">⚡</span>办公自动化学习视频',
-meta:'<span>2026年10月26日 · 周一</span><span class="badge badge-orange">播放量Top 20</span>',
+meta:'<span>2026年10月27日 · 周二</span><span class="badge badge-orange">播放量Top 20</span>',
 html:`<div class="stats-row">
 <div class="stat-card"><div class="stat-num">20</div><div class="stat-label">热门视频</div></div>
-<div class="stat-card"><div class="stat-num">1244.9万</div><div class="stat-label">最高播放</div></div>
+<div class="stat-card"><div class="stat-num">1245.2万</div><div class="stat-label">最高播放</div></div>
 <div class="stat-card"><div class="stat-num">B站</div><div class="stat-label">主平台</div></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">1</span>播放量Top 5（详细）</div>
 <div class="card"><div class="card-title"><span class="rnk">1</span>EXCEL教程 | 拜托三连了！全B站最用心（没有之一）的EXCEL免费课程！OFFICE/WPS/表格/EXCEL函数/EXCEL技巧/数据分析/办公软件</div>
-<div class="card-meta">B站 · UP主：别怕Ai · 播放量：1244.9万 <span class="card-tag tag-blue">EXCEL</span><span class="card-tag tag-blue">EXCEL技巧</span></div>
+<div class="card-meta">B站 · UP主：别怕Ai · 播放量：1245.2万 <span class="card-tag tag-blue">EXCEL</span><span class="card-tag tag-blue">EXCEL技巧</span></div>
 <div class="card-summary">B生所学已更新2023年最新AI&PPT新课程：BV1t14y1C7P4 ，教你利用AI提高PPT生产力，真正实现高效办公 
 
 欢迎来到我们的B生所学系列课的第三辑-Excel系列课程；本系列课程是由我们EXCEL老师：若梦老师为大家带来</div>
 <div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:100.0%"></span></span> 100.0%</div>
 <a class="card-link" href="http://www.bilibili.com/video/av547421812" target="_blank">观看视频 →</a></div>
 <div class="card"><div class="card-title"><span class="rnk">2</span>PPT教程 | PPT高手之路，零基础做出高逼格PPT，免费PPT设计制作技巧教学！OFFICE/WPS/演示/幻灯片/PPT模板/keynote/汇报/总结</div>
-<div class="card-meta">B站 · UP主：L叔的播客 · 播放量：1202.9万 <span class="card-tag tag-blue">职场</span><span class="card-tag tag-blue">PPT课程</span></div>
+<div class="card-meta">B站 · UP主：L叔的播客 · 播放量：1203.3万 <span class="card-tag tag-blue">职场</span><span class="card-tag tag-blue">PPT课程</span></div>
 <div class="card-summary">B生所学已更新2023年最新AI&PPT新课程：BV1t14y1C7P4 ，教你利用AI提高PPT生产力，真正实现高效办公
 
 站酷百万人气设计师，演界网“首席”；
@@ -335,7 +340,7 @@ html:`<div class="stats-row">
 <div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:96.6%"></span></span> 96.6%</div>
 <a class="card-link" href="http://www.bilibili.com/video/av840834065" target="_blank">观看视频 →</a></div>
 <div class="card"><div class="card-title"><span class="rnk">3</span>2026必看！全网最新最细最实用Excel零基础入门到精通全套教程！专为零基础小白打造！内容富含Excel表格基础操作、实用函数讲解、项目实战等！</div>
-<div class="card-meta">B站 · UP主：之了学吧 · 播放量：648.2万 <span class="card-tag tag-blue">EXCEL</span><span class="card-tag tag-blue">2023最新</span></div>
+<div class="card-meta">B站 · UP主：之了学吧 · 播放量：649.0万 <span class="card-tag tag-blue">EXCEL</span><span class="card-tag tag-blue">2023最新</span></div>
 <div class="card-summary">搜索公众号【之了学吧】，点击添加助教老师获取视频文档
 
 Word零基础到精通→BV17v4y1j7CY
@@ -349,41 +354,39 @@ VBA实战→BV1xx4y1N7mo
 <div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:52.1%"></span></span> 52.1%</div>
 <a class="card-link" href="http://www.bilibili.com/video/av737382980" target="_blank">观看视频 →</a></div>
 <div class="card"><div class="card-title"><span class="rnk">4</span>【全套】Word自学教程从小白到高手超详细讲解（Word教程、Word零基础入门起步）</div>
-<div class="card-meta">B站 · UP主：爱知趣教育 · 播放量：636.1万 <span class="card-tag tag-blue">word高效办公</span><span class="card-tag tag-blue">word教程视频全集</span></div>
+<div class="card-meta">B站 · UP主：爱知趣教育 · 播放量：636.4万 <span class="card-tag tag-blue">word高效办公</span><span class="card-tag tag-blue">word教程视频全集</span></div>
 <div class="card-summary">欢迎加入Word学习群：175453351期待你加入
 我们只做精品课
 本套教程对word软件从基础入门到深入应用做了系统性的介绍，包括基本功能的使用，及实际提高的应用，文本的高效选择，图文混排，个人简历的设计，封面的设计等，内容详尽，语言简</div>
 <div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:51.1%"></span></span> 51.1%</div>
 <a class="card-link" href="http://www.bilibili.com/video/av9261220" target="_blank">观看视频 →</a></div>
-<div class="card"><div class="card-title"><span class="rnk">5</span>Excel教程 | 拜托三连了！全 B 站最用心（没有之一）的Excel小白到高手系列教程，职场人必存全套office办公软件教学</div>
-<div class="card-meta">B站 · UP主：爱知趣教育 · 播放量：559.2万 <span class="card-tag tag-blue">Excel小白</span><span class="card-tag tag-blue">办公软件</span></div>
-<div class="card-summary">还在为 Excel 加班熬夜？这套小白进阶高手教程帮你少走弯路！ B 站用心打磨 Excel 全套系列课程，专业精品 Excel 学习群欢迎加入✨
-✅入群福利：配套练习课件 + 软件安装包免费领取 
-✅专属答疑随时问
-拒绝零散碎片教程，全套</div>
-<div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:44.9%"></span></span> 44.9%</div>
-<a class="card-link" href="http://www.bilibili.com/video/av5614436" target="_blank">观看视频 →</a></div>
+<div class="card"><div class="card-title"><span class="rnk">5</span>【2022最新全套】Excel零基础入门进阶到函数，Excel自学教程从小白到高手入门起步超详细实操教程（Excel教程、Excel函数、Excel技巧）</div>
+<div class="card-meta">B站 · UP主：财务大管家 · 播放量：524.3万 <span class="card-tag tag-blue">教育</span><span class="card-tag tag-blue">EXCEL函数</span></div>
+<div class="card-summary">https://www.youtube.com/playlist?list=PL7enJ2-v6SPm-EHMuRMCG7R7C-vXQugNM
+Excel自学教程从小白到高手超详细实操教程</div>
+<div class="card-meta">热度：<span class="heat-bar"><span class="heat-fill" style="width:42.1%"></span></span> 42.1%</div>
+<a class="card-link" href="http://www.bilibili.com/video/av337823979" target="_blank">观看视频 →</a></div>
 </div>
 <div class="rpt-section">
 <div class="rpt-section-title"><span class="num">2</span>完整排行榜 6-20</div>
 <table>
 <thead><tr><th>序号</th><th>标题</th><th>平台</th><th>UP主</th><th>难度</th><th>链接</th></tr></thead>
 <tbody>
-<tr><td>6</td><td>【2022最新全套】Excel零基础入门进阶到函数，Excel自学教程从小白到高手入门起步超详细实操教程（Excel教程、Excel函数、Excel技巧）</td><td>B站</td><td>财务大管家</td><td>进阶</td><td><a href="http://www.bilibili.com/video/av337823979" target="_blank">观看→</a></td></tr>
-<tr><td>7</td><td>PPT教程 | PPT高手之路，零基础做出高逼格PPT，免费PPT设计制作技巧教学！OFFICE/WPS/演示/幻灯片/PPT模板/keynote/汇报/总结</td><td>B站</td><td>别怕Ai</td><td>入门</td><td><a href="http://www.bilibili.com/video/av291840257" target="_blank">观看→</a></td></tr>
-<tr><td>8</td><td>【全套】PPT自学教程从小白到高手超详细讲解（PowerPoint教程、PPT零基础入门起步）</td><td>B站</td><td>爱知趣教育</td><td>入门</td><td><a href="http://www.bilibili.com/video/av12053279" target="_blank">观看→</a></td></tr>
-<tr><td>9</td><td>5分钟，教你做个自动化软件拿来办公、刷副本、回微信 | 源码公开，开箱即用</td><td>B站</td><td>不高兴就喝水</td><td>进阶</td><td><a href="http://www.bilibili.com/video/av806829194" target="_blank">观看→</a></td></tr>
-<tr><td>10</td><td>【WPS】全套新手自学教程，从零开始超详细讲解</td><td>B站</td><td>WPS学堂</td><td>入门</td><td><a href="http://www.bilibili.com/video/av65469718" target="_blank">观看→</a></td></tr>
-<tr><td>11</td><td>Word教程 | 拜托三连了！全B站最用心（没有之一）的Word免费课程！OFFICE/WPS/办公软件/排版/论文/毕业/文档/行政/打印/标书/报告/方案</td><td>B站</td><td>别怕Ai</td><td>入门</td><td><a href="http://www.bilibili.com/video/av761944292" target="_blank">观看→</a></td></tr>
-<tr><td>12</td><td>Excel2016教程，Excel零基础教程，Excel2016完全自学教程 office零基础入门学习 excel表格制作从入门到精通 电脑基础办公自动化</td><td>B站</td><td>课程分享-小野君</td><td>入门</td><td><a href="http://www.bilibili.com/video/av33678186" target="_blank">观看→</a></td></tr>
-<tr><td>13</td><td>【办公软件实操】Excel、Word自学教程 从小白到高手 零基础入门起步 表格/EXCEL函数/EXCEL技巧/数据分析/办公软件教学</td><td>B站</td><td>职上充电站</td><td>入门</td><td><a href="http://www.bilibili.com/video/av811115813" target="_blank">观看→</a></td></tr>
-<tr><td>14</td><td>学12分钟就能做出PPT【ppt简易制作教程】干货全拿走，开店就赚钱</td><td>B站</td><td>呆伯特PPT</td><td>入门</td><td><a href="http://www.bilibili.com/video/av291584001" target="_blank">观看→</a></td></tr>
-<tr><td>15</td><td>【自学WPS教程】2026必看！带你真正掌握WPS办公！全网最新最细最实用WPS零基础入门到精通全套教程！内含Excel基础操作、函数设计、数据透视表等</td><td>B站</td><td>之了学吧</td><td>入门</td><td><a href="http://www.bilibili.com/video/av273997011" target="_blank">观看→</a></td></tr>
-<tr><td>16</td><td>【Office教程】word全套新手自学教程，从零基础到精通</td><td>B站</td><td>大耳朵资源</td><td>入门</td><td><a href="http://www.bilibili.com/video/av628562474" target="_blank">观看→</a></td></tr>
-<tr><td>17</td><td>EXCEL表格的基础操作基础教程，新手入门</td><td>B站</td><td>閑来無事</td><td>入门</td><td><a href="http://www.bilibili.com/video/av544777585" target="_blank">观看→</a></td></tr>
-<tr><td>18</td><td>【2026最新】B站最全最细的AI Agent智能体搭建教程，从入门到实战！手把手教你快速打造自己的专属智能体，一次性搞懂AI大模型智能体开发，学完薪资翻倍！</td><td>B站</td><td>AI-智能体搭建教程</td><td>进阶</td><td><a href="http://www.bilibili.com/video/av116187623069851" target="_blank">观看→</a></td></tr>
-<tr><td>19</td><td>千锋教育Python全套视频教程，轻松掌握Excel、Word、PPT、邮件、爬虫、office办公自动化（宋如宁主讲）</td><td>B站</td><td>千锋教育</td><td>入门</td><td><a href="http://www.bilibili.com/video/av207647192" target="_blank">观看→</a></td></tr>
-<tr><td>20</td><td>一级计算机基础及MS office应用 新思路解题视频【61~79套】</td><td>B站</td><td>新思路等考通</td><td>入门</td><td><a href="http://www.bilibili.com/video/av980970581" target="_blank">观看→</a></td></tr>
+<tr><td>6</td><td>PPT教程 | PPT高手之路，零基础做出高逼格PPT，免费PPT设计制作技巧教学！OFFICE/WPS/演示/幻灯片/PPT模板/keynote/汇报/总结</td><td>B站</td><td>别怕Ai</td><td>入门</td><td><a href="http://www.bilibili.com/video/av291840257" target="_blank">观看→</a></td></tr>
+<tr><td>7</td><td>【全套】PPT自学教程从小白到高手超详细讲解（PowerPoint教程、PPT零基础入门起步）</td><td>B站</td><td>爱知趣教育</td><td>入门</td><td><a href="http://www.bilibili.com/video/av12053279" target="_blank">观看→</a></td></tr>
+<tr><td>8</td><td>5分钟，教你做个自动化软件拿来办公、刷副本、回微信 | 源码公开，开箱即用</td><td>B站</td><td>不高兴就喝水</td><td>进阶</td><td><a href="http://www.bilibili.com/video/av806829194" target="_blank">观看→</a></td></tr>
+<tr><td>9</td><td>【WPS】全套新手自学教程，从零开始超详细讲解</td><td>B站</td><td>WPS学堂</td><td>入门</td><td><a href="http://www.bilibili.com/video/av65469718" target="_blank">观看→</a></td></tr>
+<tr><td>10</td><td>Word教程 | 拜托三连了！全B站最用心（没有之一）的Word免费课程！OFFICE/WPS/办公软件/排版/论文/毕业/文档/行政/打印/标书/报告/方案</td><td>B站</td><td>别怕Ai</td><td>入门</td><td><a href="http://www.bilibili.com/video/av761944292" target="_blank">观看→</a></td></tr>
+<tr><td>11</td><td>【26年9月新版】计算机二级MS Office-Excel真题讲解（office 2016版）</td><td>B站</td><td>无忧考吧NCRE</td><td>入门</td><td><a href="http://www.bilibili.com/video/av20722853" target="_blank">观看→</a></td></tr>
+<tr><td>12</td><td>【办公软件实操】Excel、Word自学教程 从小白到高手 零基础入门起步 表格/EXCEL函数/EXCEL技巧/数据分析/办公软件教学</td><td>B站</td><td>职上充电站</td><td>入门</td><td><a href="http://www.bilibili.com/video/av811115813" target="_blank">观看→</a></td></tr>
+<tr><td>13</td><td>学12分钟就能做出PPT【ppt简易制作教程】干货全拿走，开店就赚钱</td><td>B站</td><td>呆伯特PPT</td><td>入门</td><td><a href="http://www.bilibili.com/video/av291584001" target="_blank">观看→</a></td></tr>
+<tr><td>14</td><td>【自学WPS教程】2026必看！带你真正掌握WPS办公！全网最新最细最实用WPS零基础入门到精通全套教程！内含Excel基础操作、函数设计、数据透视表等</td><td>B站</td><td>之了学吧</td><td>入门</td><td><a href="http://www.bilibili.com/video/av273997011" target="_blank">观看→</a></td></tr>
+<tr><td>15</td><td>【Office教程】word全套新手自学教程，从零基础到精通</td><td>B站</td><td>大耳朵资源</td><td>入门</td><td><a href="http://www.bilibili.com/video/av628562474" target="_blank">观看→</a></td></tr>
+<tr><td>16</td><td>EXCEL表格的基础操作基础教程，新手入门</td><td>B站</td><td>閑来無事</td><td>入门</td><td><a href="http://www.bilibili.com/video/av544777585" target="_blank">观看→</a></td></tr>
+<tr><td>17</td><td>【2026最新】B站最全最细的AI Agent智能体搭建教程，从入门到实战！手把手教你快速打造自己的专属智能体，一次性搞懂AI大模型智能体开发，学完薪资翻倍！</td><td>B站</td><td>AI-智能体搭建教程</td><td>进阶</td><td><a href="http://www.bilibili.com/video/av116187623069851" target="_blank">观看→</a></td></tr>
+<tr><td>18</td><td>千锋教育Python全套视频教程，轻松掌握Excel、Word、PPT、邮件、爬虫、office办公自动化（宋如宁主讲）</td><td>B站</td><td>千锋教育</td><td>入门</td><td><a href="http://www.bilibili.com/video/av207647192" target="_blank">观看→</a></td></tr>
+<tr><td>19</td><td>【B站强推】2026最新版Excel零基础入门到精通全套教程，覆盖Excel函数 | 数据透视表 | 数据处理 | 数据分析全套课程</td><td>B站</td><td>Max极客菌</td><td>入门</td><td><a href="http://www.bilibili.com/video/av116719125267473" target="_blank">观看→</a></td></tr>
+<tr><td>20</td><td>《零基础学做PPT 》PPT教程，零基础学做PPT</td><td>B站</td><td>哔哩哔哩课堂专栏</td><td>入门</td><td><a href="http://www.bilibili.com/video/av514000850" target="_blank">观看→</a></td></tr>
 </tbody>
 </table>
 </div>
